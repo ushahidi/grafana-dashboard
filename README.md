@@ -1,3 +1,20 @@
+#The Ushahidi Grafana Dashboard
+This repo is forked from [Grafana](https://github.com/grafana/grafana)
+
+To build the container, run `docker compose build`
+To start the container, run `docker compose up`
+
+The custom configuration lives in this file: /conf/custom.ini
+
+Dev-workflow:
+
+1. The provisioned dashboard is called: GIZ Siaya project
+2. Add your work to the dashboard.
+3. Once you are happy with your work, click save, copy the json that is displayed (you cannot save a provisioned dashboard in the interface, they give you the json instead) and paste it into /conf/provisioning/dashboards/giz-siaya.json
+4. Apply the changes locally to test them by running `docker compose restart grafana`
+5. Commit the changes to your branch
+6. Push and create a PR
+
 ![Grafana Logo (Light)](docs/logo-horizontal.png#gh-light-mode-only)
 ![Grafana Logo (Dark)](docs/logo-horizontal-dark.png#gh-dark-mode-only)
 

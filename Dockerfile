@@ -243,3 +243,7 @@ COPY ${RUN_SH} /run.sh
 
 USER "$GF_UID"
 ENTRYPOINT [ "/run.sh" ]
+
+# --- Custom config and provisioning ---
+COPY conf/custom.ini /etc/grafana/grafana.ini
+COPY conf/provisioning/dashboards /etc/grafana/provisioning/dashboards

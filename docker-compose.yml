@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  grafana:
+    build: .
+    container_name: grafana-ush
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_PATHS_CONFIG=/etc/grafana/grafana.ini
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+      - GF_INSTALL_PLUGINS=yesoreyeram-boomtheme-panel,yesoreyeram-infinity-datasource,marcusolsson-dynamictext-panel
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./conf/custom.ini:/etc/grafana/grafana.ini
+      - ./conf/provisioning:/etc/grafana/provisioning
+      - ./data:/var/lib/grafana
+    restart: unless-stopped
