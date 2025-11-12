@@ -18,35 +18,9 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 5,
   "links": [],
-  "panels": [
-    {
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 0
-      },
-      "id": 1,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "GIZ Siaya project :)",
-        "mode": "html"
-      },
-      "pluginVersion": "12.3.0-pre",
-      "title": "",
-      "type": "text"
-    }
-  ],
+  "panels": [],
   "preload": false,
   "schemaVersion": 42,
   "tags": [],
@@ -59,7 +33,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "GIZ Siaya project",
-  "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf69",
+  "title": "Awareness",
+  "uid": "adg24gt",
   "version": 1
 }

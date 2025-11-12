@@ -1,11 +1,11 @@
 apiVersion: 1
 
 providers:
-  - name: 'Default'
+  - name: 'GIZ Siaya Multitabs'
     orgId: 1
-    folder: ''
+    folder: 'GIZ Siaya Multitabs'
     type: file
     disableDeletion: false
     updateIntervalSeconds: 30
     options:
-      path: /etc/grafana/provisioning/dashboards
+      path: /etc/grafana/provisioning/dashboards/giz-siaya-multitab
