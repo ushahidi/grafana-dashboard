@@ -18,4 +18,5 @@ services:
       - ./conf/custom.ini:/etc/grafana/grafana.ini
       - ./conf/provisioning:/etc/grafana/provisioning
       - ./data:/var/lib/grafana
+      - ./public/img/custom:/usr/share/grafana/public/img/custom
     restart: unless-stopped
