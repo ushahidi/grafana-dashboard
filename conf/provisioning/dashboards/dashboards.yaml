@@ -8,4 +8,13 @@ providers:
     disableDeletion: false
     updateIntervalSeconds: 30
     options:
-      path: /etc/grafana/provisioning/dashboards
+      path: /etc/grafana/provisioning/dashboards/default
+
+  - name: 'GIZ Siaya Multitabs'
+    orgId: 1
+    folder: 'GIZ Siaya Multitabs'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 30
+    options:
+      path: /etc/grafana/provisioning/dashboards/giz-siaya-multitabs

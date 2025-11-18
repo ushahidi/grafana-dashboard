@@ -1,0 +1,115 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 48,
+  "links": [],
+  "panels": [
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px; border-radius: 5px;\">\n  <div style=\"display: flex; align-items: center;\">\n    <img src=\"/public/img/custom/kijijiyetu.png\" alt=\"Logo\" style=\"height: 128px; margin-right: 10px;\">\n  </div>\n</div>\n<div style=\"margin-top: 1em;\">\n  <h1 style=\"font-size: 1.5rem; font-weight: 700;\">\n    Community-driven Climate Action in Siaya County</h1>\n  <h2 style=\"font-size: 1.125rem; font-weight: 500;\">Using crowd-sourced data from social media and surveys to build evidence for climate adaptation and governance.</h2>\n</div>\n",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0-pre",
+      "title": "",
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 24,
+        "x": 0,
+        "y": 7
+      },
+      "id": 4,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"display:flex;flex-wrap:wrap;justify-content:center;align-items:center;font-family:Inter,Helvetica,Arial,sans-serif;text-align:center;\">\n\n  <!-- Engagement & Demographics -->\n  <a href=\"http://localhost:3000/public-dashboards/445323c6de584b47870dc2a0f6dbb572\"\n  target=\"_self\"\n   rel=\"noopener noreferrer\"\n     style=\"color:#008d36;background-color:#f9fafb;text-decoration:none;padding:10px 20px;margin:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-weight:500;transition:all .3s ease;\"\n     onmouseover=\"this.style.backgroundColor='#008d36';this.style.color='#ffffff';\"\n     onmouseout=\"this.style.backgroundColor='#f9fafb';this.style.color='#008d36';\">\n     Engagement & Demographics\n     \n  </a>\n\n  <!-- Awareness(active)) -->\n  <a href=\"http://localhost:3000/public-dashboards/1862c415d85846e0a9a9d4060981b2b7\"\n  target=\"_self\"\n   rel=\"noopener noreferrer\"\n     style=\"color:#008d36;background-color:#f9fafb;text-decoration:none;padding:10px 20px;margin:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-weight:500;transition:all .3s ease;\"\n     onmouseover=\"this.style.backgroundColor='##008d36';this.style.color='#ffffff';\"\n     onmouseout=\"this.style.backgroundColor='#f9fafb';this.style.color='#008d36';\">\n     Awareness\n  </a>\n\n  <!-- Vulnerability -->\n  <a href=\"http://localhost:3000/public-dashboards/094834196b7f41b4a01424f1091b855d\"\n  target=\"_self\"\n   rel=\"noopener noreferrer\"\n     style=\"color:#008d36;background-color:#f9fafb;text-decoration:none;padding:10px 20px;margin:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-weight:500;transition:all .3s ease;\"\n     onmouseover=\"this.style.backgroundColor='##008d36';this.style.color='#ffffff';\"\n     onmouseout=\"this.style.backgroundColor='#f9fafb';this.style.color='#008d36';\">\n     Vulnerability\n  </a>\n\n\n  <!-- Insights & Trends -->\n  <a href=\"http://localhost:3000/public-dashboards/b439e0348e5140c69f0de4e809dc6020\"\n  target=\"_self\"\n  rel=\"noopener noreferrer\"\n     style=\"color:#ffffff;background-color:#F15A29;text-decoration:none;padding:10px 20px;margin:4px 6px;border-radius:6px;font-weight:600;box-shadow:0 2px 6px rgba(241,90,41,0.3);transition:all .3s ease;\">\n     Insights & Trends\n  </a>\n\n</div>\n\n\n\n",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0-pre",
+      "title": "",
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      },
+      "id": 2,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"text-align: center; padding: 20px;\">\n  <!-- Image row -->\n  <div style=\"display: flex; justify-content: center; align-items: center; gap: 20px;\">\n    <img src=\"/public/img/custom/ushahidi.png\" alt=\"Ushahidi Logo\" style=\"height: 60px;\">\n    <img src=\"/public/img/custom/kijijiyetu.png\" alt=\"Kijiji Yeetu Logo\" style=\"height: 64px;\"> \n    <img src=\"/public/img/custom/gizkenya.png\" alt=\"GIZ Kenya Logo\" style=\"height: 80px;\">\n  </div>\n\n  <!-- Footer text -->\n  <div style=\"margin-top: 1em;\">\n    <h2 style=\"font-size: 1.125rem; font-weight: 500; max-width: 700px; margin: 0 auto;\">\n      This dashboard was developed by Ushahidi as part of a community engagement project\n      in partnership with Kijiji Yeetu, and funded by GIZ Kenya.\n    </h2>\n  </div>\n</div>\n",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0-pre",
+      "title": "",
+      "type": "text"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 42,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Insights & Trends",
+  "uid": "adl9fg9",
+  "version": 1
+}
