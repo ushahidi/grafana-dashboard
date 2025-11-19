@@ -18,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 20,
+  "id": 29,
   "links": [],
   "panels": [
     {
@@ -52,35 +52,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 2,
-        "w": 24,
-        "x": 0,
-        "y": 7
-      },
-      "id": 4,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"display:flex;flex-wrap:wrap;justify-content:center;align-items:center;font-family:Inter,Helvetica,Arial,sans-serif;text-align:center;\">\n\n  <!-- Engagement & Demographics -->\n  <a href=\"http://localhost:3000/public-dashboards/1da67f45e63949aaacbf3bfa736ab13d\"\n  target=\"_self\"\n   rel=\"noopener noreferrer\"\n     style=\"color:#008d36;background-color:#f9fafb;text-decoration:none;padding:10px 20px;margin:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-weight:500;transition:all .3s ease;\"\n     onmouseover=\"this.style.backgroundColor='#008d36';this.style.color='#ffffff';\"\n     onmouseout=\"this.style.backgroundColor='#f9fafb';this.style.color='#008d36';\">\n     Engagement & Demographics\n     \n  </a>\n\n  <!-- Awareness -->\n  <a href=\"http://localhost:3000/public-dashboards/d99bae0138cb47b99e90345d949ebaab\"\n  target=\"_self\"\n      rel=\"noopener noreferrer\"\n     style=\"color:#008d36;background-color:#f9fafb;text-decoration:none;padding:10px 20px;margin:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-weight:500;transition:all .3s ease;\"\n     onmouseover=\"this.style.backgroundColor='##008d36';this.style.color='#ffffff';\"\n     onmouseout=\"this.style.backgroundColor='#f9fafb';this.style.color='#008d36';\">\n     Awareness\n  </a>\n\n  <!-- Vulnerability(active) -->\n  <a href=\"http://localhost:3000/public-dashboards/8dd890c094904594b35b7dc8bfbae22b\"\n  target=\"_self\"\n  rel=\"noopener noreferrer\"\n     style=\"color:#ffffff;background-color:#F15A29;text-decoration:none;padding:10px 20px;margin:4px 6px;border-radius:6px;font-weight:600;box-shadow:0 2px 6px rgba(241,90,41,0.3);transition:all .3s ease;\">\n     Vulnerability\n  </a>\n\n\n  <!-- Insights & Trends -->\n  <a href=\"http://localhost:3000/public-dashboards/878d673d60884141a99d3a42f1872e2c\"\n  target=\"_self\"\n   rel=\"noopener noreferrer\"\n     style=\"color:#008d36;background-color:#f9fafb;text-decoration:none;padding:10px 20px;margin:4px 6px;border:1px solid #d1d5db;border-radius:6px;font-weight:500;transition:all .3s ease;\"\n     onmouseover=\"this.style.backgroundColor='##008d36';this.style.color='#ffffff';\"\n     onmouseout=\"this.style.backgroundColor='#f9fafb';this.style.color='#008d36';\">\n     Insights & Trends\n  </a>\n\n</div>\n\n\n\n",
-        "mode": "html"
-      },
-      "pluginVersion": "12.3.0-pre",
-      "title": "",
-      "type": "text"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
         "h": 11,
         "w": 24,
         "x": 0,
-        "y": 9
+        "y": 7
       },
       "id": 3,
       "options": {},
@@ -97,7 +72,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 20
+        "y": 18
       },
       "id": 2,
       "options": {
@@ -126,7 +101,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "Vulnerability",
-  "uid": "adxt5lx",
-  "version": 4
+  "title": "GIZ Siaya",
+  "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
+  "version": 3
 }
