@@ -18,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 29,
+  "id": 47,
   "links": [],
   "panels": [
     {
@@ -52,7 +52,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 11,
+        "h": 4,
         "w": 24,
         "x": 0,
         "y": 7
@@ -64,6 +64,58 @@
       "type": "yesoreyeram-boomtheme-panel"
     },
     {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ef3bg0xych0cge"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 19,
+        "w": 11,
+        "x": 0,
+        "y": 11
+      },
+      "id": 4,
+      "options": {
+        "decimalPlaces": 1,
+        "fieldCategory": "category",
+        "fieldLanguage": "language",
+        "fieldLanguagePercent": "languagePercent",
+        "fieldMentionsCount": "socialCount",
+        "fieldMentionsPercent": "socialPercent",
+        "platformVoicesCount": "totalVoices",
+        "showNumbering": false,
+        "socialVoicesCount": "socialMediaTotal",
+        "statColor": "green",
+        "totalVoicesCount": "totalPosts"
+      },
+      "pluginVersion": "1.0.0",
+      "targets": [
+        {
+          "columns": [],
+          "data": "category,socialCount,socialPercent,language,languagePercent,totalVoices,totalPosts,socialMediaTotal\nTwitter,1667,45.3,English,45,5000,5000,3000\nFacebook,1667,33.3,Luo,32.5,,,\nYouTube,2387,78.5,Swahili,78.34,,,\nPlatform,5000,95.5,,,,,",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "data": "",
+            "method": "GET"
+          }
+        }
+      ],
+      "title": "",
+      "type": "ushahidi-platformbreakdown-panel"
+    },
+    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -72,7 +124,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 18
+        "y": 30
       },
       "id": 2,
       "options": {
@@ -103,5 +155,5 @@
   "timezone": "browser",
   "title": "GIZ Siaya",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 3
+  "version": 1
 }
