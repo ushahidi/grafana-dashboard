@@ -52,7 +52,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 4,
+        "h": 1,
         "w": 24,
         "x": 0,
         "y": 7
@@ -60,7 +60,7 @@
       "id": 3,
       "options": {},
       "pluginVersion": "0.2.1",
-      "title": "New panel",
+      "title": "Boom Theme (In Progress)",
       "type": "yesoreyeram-boomtheme-panel"
     },
     {
@@ -76,7 +76,7 @@
         "h": 19,
         "w": 11,
         "x": 0,
-        "y": 11
+        "y": 8
       },
       "id": 4,
       "options": {
@@ -121,10 +121,296 @@
         "overrides": []
       },
       "gridPos": {
+        "h": 2,
+        "w": 24,
+        "x": 0,
+        "y": 27
+      },
+      "id": 5,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">🔄</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Adaptation Practices vs Needs</h3>\n    <p style=\"margin:4px 0 0;\">Identifying the successes vs gaps</p>\n  </div>\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0-pre",
+      "title": "",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ef3bg0xych0cge"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 0,
+        "y": 29
+      },
+      "id": 6,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 83}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "How are you adjusting to the weather events affecting your household/community?",
+      "transformations": [
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "lower",
+                  "options": {
+                    "value": "10"
+                  }
+                },
+                "fieldName": "value"
+              },
+              {
+                "config": {
+                  "id": "substring",
+                  "options": {
+                    "value": "nothing"
+                  }
+                },
+                "fieldName": "label"
+              }
+            ],
+            "match": "any",
+            "type": "exclude"
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ef3bg0xych0cge"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-blue",
+            "mode": "fixed"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 12,
+        "y": 29
+      },
+      "id": 7,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 84}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "What help do you think your household or community needs most to better adapt to weather changes?",
+      "transformations": [
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "lower",
+                  "options": {
+                    "value": "11"
+                  }
+                },
+                "fieldName": "value"
+              },
+              {
+                "config": {
+                  "id": "substring",
+                  "options": {
+                    "value": "I don't know"
+                  }
+                },
+                "fieldName": "label"
+              }
+            ],
+            "match": "any",
+            "type": "exclude"
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 30
+        "y": 41
       },
       "id": 2,
       "options": {
@@ -155,5 +441,5 @@
   "timezone": "browser",
   "title": "GIZ Siaya",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 1
+  "version": 2
 }
