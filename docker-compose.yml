@@ -13,6 +13,7 @@ services:
       - GF_SECURITY_ADMIN_USER=admin
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS=max-progressbars-panel,ushahidi-platformbreakdown-panel
+      - GF_USERS_DEFAULT_THEME=light
     volumes:
       - ./data/plugins/max-progressbars-panel:/var/lib/grafana/plugins/max-progressbars-panel
       - ./data/plugins/ushahidi-platformbreakdown-panel:/var/lib/grafana/plugins/ushahidi-platformbreakdown-panel
