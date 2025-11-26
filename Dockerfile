@@ -161,7 +161,6 @@ ARG GF_UID="472"
 ARG GF_GID="0"
 
 ENV PATH="/usr/share/grafana/bin:$PATH" \
-  GF_PATHS_CONFIG="/etc/grafana/grafana.ini" \
   GF_PATHS_DATA="/var/lib/grafana" \
   GF_PATHS_HOME="/usr/share/grafana" \
   GF_PATHS_LOGS="/var/log/grafana" \
@@ -226,7 +225,10 @@ RUN if [ ! $(getent group "$GF_GID") ]; then \
   "$GF_PATHS_LOGS" \
   "$GF_PATHS_PLUGINS" \
   "$GF_PATHS_DATA" && \
-  cp conf/sample.ini "$GF_PATHS_CONFIG" && \
+  # NOTE: we intentionally do NOT copy sample.ini into a config path by default
+  # If you want an ini present at build time, uncomment the next line and/or
+  # re-enable copying conf/custom.ini further below.
+  # cp conf/sample.ini "$GF_PATHS_CONFIG" && \
   cp conf/ldap.toml /etc/grafana/ldap.toml && \
   chown -R "grafana:$GF_GID_NAME" "$GF_PATHS_DATA" "$GF_PATHS_HOME/.aws" "$GF_PATHS_LOGS" "$GF_PATHS_PLUGINS" "$GF_PATHS_PROVISIONING" && \
   chmod -R 777 "$GF_PATHS_DATA" "$GF_PATHS_HOME/.aws" "$GF_PATHS_LOGS" "$GF_PATHS_PLUGINS" "$GF_PATHS_PROVISIONING"
@@ -244,6 +246,18 @@ COPY ${RUN_SH} /run.sh
 USER "$GF_UID"
 ENTRYPOINT [ "/run.sh" ]
 
-# --- Custom config and provisioning ---
-COPY conf/custom.ini /etc/grafana/grafana.ini
+# --- Custom provisioning (no grafana.ini baked into the image) ---
+# We avoid copying conf/custom.ini here so the image will use environment variables
+# + provisioning files for configuration. If you want to bake a grafana.ini into
+# the image, re-enable the COPY line below.
+#
+# COPY conf/custom.ini /etc/grafana/grafana.ini
+
+# Copy the entire provisioning directory so that all datasources / dashboards / etc.
+# are present in the image at build time. This makes the container self-contained.
+COPY conf/provisioning /etc/grafana/provisioning
+# If you still want to copy dashboards into varlib as the distro previously did:
 COPY conf/provisioning/dashboards /etc/grafana/provisioning/dashboards
+
+# (optional) If your repo contains public custom images, copy them in:
+COPY public/img/custom /usr/share/grafana/public/img/custom
