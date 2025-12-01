@@ -18,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 47,
+  "id": 11,
   "links": [],
   "panels": [
     {
@@ -66,7 +66,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "ef3bg0xych0cge"
+        "uid": "cf5digrig99fkc"
       },
       "fieldConfig": {
         "defaults": {},
@@ -86,11 +86,11 @@
         "fieldLanguagePercent": "languagePercent",
         "fieldMentionsCount": "socialCount",
         "fieldMentionsPercent": "socialPercent",
-        "platformVoicesCount": "totalVoices",
+        "platformVoicesCount": "totalPosts",
         "showNumbering": false,
         "socialVoicesCount": "socialMediaTotal",
         "statColor": "green",
-        "totalVoicesCount": "totalPosts"
+        "totalVoicesCount": "totalVoices"
       },
       "pluginVersion": "1.0.0",
       "targets": [
@@ -143,7 +143,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "ef3bg0xych0cge"
+        "uid": "cf5digrig99fkc"
       },
       "fieldConfig": {
         "defaults": {
@@ -229,11 +229,11 @@
           "root_selector": "data",
           "source": "url",
           "type": "json",
-          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url": "",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 83}}]}",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
             "method": "POST"
           }
         }
@@ -273,7 +273,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "ef3bg0xych0cge"
+        "uid": "cf5digrig99fkc"
       },
       "fieldConfig": {
         "defaults": {
@@ -360,11 +360,11 @@
           "root_selector": "data",
           "source": "url",
           "type": "json",
-          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url": "",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 84}}]}",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 25}}]}",
             "method": "POST"
           }
         }
@@ -402,6 +402,210 @@
       "type": "barchart"
     },
     {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 41
+      },
+      "id": 8,
+      "options": {
+        "displayLabels": ["percent", "name"],
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": true
+        },
+        "sort": "desc",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "cf5digrig99fkc"
+          },
+          "filters": [],
+          "format": "dataframe",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"cache\":\"skip\",\"id\":\"platform_data\", \"params\": {\"fieldId\":10}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Do you think climate change is something that is affecting you or is going to affect you personally?",
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 41
+      },
+      "id": 10,
+      "options": {
+        "displayLabels": ["percent", "name"],
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": true
+        },
+        "sort": "desc",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"cache\":\"skip\",\"id\":\"platform_data\", \"params\": {\"fieldId\":26}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Have you received any information/training in the past years on how to prepare for floods, droughts, or any other weather events?",
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 49
+      },
+      "id": 11,
+      "options": {
+        "series_index": 0,
+        "wordCloudOptions": {
+          "deterministic": true,
+          "enableTooltip": true,
+          "fontFamily": "arial",
+          "fontSizes": [15, 80],
+          "padding": 1,
+          "rotationAngles": [0, 0],
+          "rotations": 2,
+          "scale": "sqrt",
+          "spiral": "archimedean",
+          "transitionDuration": 800
+        }
+      },
+      "pluginVersion": "1.2.11",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 28}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Which source of information do you trust most to provide guidance during climate-related events?",
+      "type": "magnesium-wordcloud-panel"
+    },
+    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -410,7 +614,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 41
+        "y": 57
       },
       "id": 5,
       "options": {
