@@ -18,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 11,
+  "id": 47,
   "links": [],
   "panels": [
     {
@@ -424,7 +424,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
+        "h": 9,
         "w": 12,
         "x": 0,
         "y": 41
@@ -434,8 +434,8 @@
         "displayLabels": ["percent", "name"],
         "legend": {
           "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": false
+          "placement": "right",
+          "showLegend": true
         },
         "pieType": "pie",
         "reduceOptions": {
@@ -500,7 +500,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
+        "h": 9,
         "w": 12,
         "x": 12,
         "y": 41
@@ -510,8 +510,8 @@
         "displayLabels": ["percent", "name"],
         "legend": {
           "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": false
+          "placement": "right",
+          "showLegend": true
         },
         "pieType": "pie",
         "reduceOptions": {
@@ -563,7 +563,7 @@
         "h": 8,
         "w": 12,
         "x": 0,
-        "y": 49
+        "y": 50
       },
       "id": 11,
       "options": {
@@ -614,7 +614,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 57
+        "y": 58
       },
       "id": 5,
       "options": {
@@ -643,9 +643,9 @@
         "h": 15,
         "w": 12,
         "x": 0,
-        "y": 43
+        "y": 60
       },
-      "id": 10,
+      "id": 12,
       "options": {
         "barColor": "green",
         "decimalPlaces": 1,
@@ -655,7 +655,7 @@
         "fieldMentionsCount": "mentions_count",
         "fieldMentionsPercent": "mentions_percent",
         "showNumbering": false,
-        "title": "Which is the main weather event that affects your household/community most?"
+        "title": "What do you think is causing these changes in patterns or the weather events? (Ushahidi Platform)"
       },
       "pluginVersion": "1.0.0",
       "targets": [
@@ -682,6 +682,231 @@
       "type": "max-progressbars-panel"
     },
     {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ef3bg0xych0cge"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 12,
+        "x": 12,
+        "y": 60
+      },
+      "id": 13,
+      "options": {
+        "displayLabels": ["percent"],
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "/^Mentions$/",
+          "values": true
+        },
+        "sort": "desc",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "category",
+              "text": "Labels",
+              "type": "string"
+            },
+            {
+              "selector": "mentions_percent",
+              "text": "Mentions",
+              "type": "number"
+            }
+          ],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "ef3bg0xych0cge"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes_social\" }}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "What do you think is causing these changes in patterns or the weather events? (Facebook, X and YouTube)",
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ef3bg0xych0cge"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 12,
+        "x": 0,
+        "y": 75
+      },
+      "id": 14,
+      "options": {
+        "barColor": "green",
+        "decimalPlaces": 1,
+        "fieldCategory": "category",
+        "fieldDescription": "description",
+        "fieldKeywords": "keywords",
+        "fieldMentionsCount": "mentions_count",
+        "fieldMentionsPercent": "mentions_percent",
+        "showNumbering": false,
+        "title": "How has the weather change affected your household/community in the last 3-5 years? (Ushahidi Platform)"
+      },
+      "pluginVersion": "1.0.0",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes\" }}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "",
+      "type": "max-progressbars-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ef3bg0xych0cge"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 12,
+        "x": 12,
+        "y": 75
+      },
+      "id": 15,
+      "options": {
+        "displayLabels": ["percent"],
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "/^Mentions$/",
+          "values": true
+        },
+        "sort": "desc",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [
+            {
+              "selector": "category",
+              "text": "Labels",
+              "type": "string"
+            },
+            {
+              "selector": "mentions_percent",
+              "text": "Mentions",
+              "type": "number"
+            }
+          ],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "ef3bg0xych0cge"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes_social\" }}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "(To be confirmed) How has the weather change affected your household/community in the last 3-5 years? (Facebook, X and YouTube)",
+      "type": "piechart"
+    },
+    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -690,7 +915,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 58
+        "y": 90
       },
       "id": 2,
       "options": {
@@ -721,5 +946,5 @@
   "timezone": "browser",
   "title": "GIZ Siaya",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 7
+  "version": 14
 }
