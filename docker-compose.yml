@@ -2,6 +2,8 @@ version: "3.9"
 
 services:
   grafana:
+    networks:
+      - kafka_network
     build: .
     container_name: grafana-ush
     ports:
@@ -23,3 +25,8 @@ services:
       - ./data:/var/lib/grafana
       - ./public/img/custom:/usr/share/grafana/public/img/custom
     restart: unless-stopped
+
+networks:
+  kafka_network:
+    external: true
+    name: kafka_network

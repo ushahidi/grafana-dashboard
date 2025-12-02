@@ -5,13 +5,13 @@ datasources:
     orgId: 1
     name: "DV-pier"
     type: "yesoreyeram-infinity-datasource"
-    url: "http://host.docker.internal:3030/data"
+    url: "http://lake-pier:3030/data"
     basicAuth: false
     basicAuthUser: ""
     isDefault: true
     jsonData:
       allowedHosts:
-        - "http://host.docker.internal:3030"
+        - "http://lake-pier:3030"
       global_queries: []
       pdcInjected: false
     readOnly: false
