@@ -633,6 +633,171 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 0,
+        "y": 60
+      },
+      "id": 16,
+      "options": {
+        "series_index": 0,
+        "wordCloudOptions": {
+          "deterministic": true,
+          "enableTooltip": true,
+          "fontFamily": "arial",
+          "fontSizes": [15, 80],
+          "padding": 1,
+          "rotationAngles": [0, 0],
+          "rotations": 2,
+          "scale": "sqrt",
+          "spiral": "archimedean",
+          "transitionDuration": 800
+        }
+      },
+      "pluginVersion": "1.2.11",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 16}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Which is the main weather event that affects your household/community most?",
+      "type": "magnesium-wordcloud-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 8,
+        "y": 60
+      },
+      "id": 17,
+      "options": {
+        "series_index": 0,
+        "wordCloudOptions": {
+          "deterministic": true,
+          "enableTooltip": true,
+          "fontFamily": "arial",
+          "fontSizes": [15, 80],
+          "padding": 1,
+          "rotationAngles": [0, 0],
+          "rotations": 2,
+          "scale": "sqrt",
+          "spiral": "archimedean",
+          "transitionDuration": 800
+        }
+      },
+      "pluginVersion": "1.2.11",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 28}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Which source of information do you trust most to provide guidance during climate-related events?",
+      "type": "magnesium-wordcloud-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 16,
+        "y": 60
+      },
+      "id": 18,
+      "options": {
+        "series_index": 0,
+        "wordCloudOptions": {
+          "deterministic": true,
+          "enableTooltip": true,
+          "fontFamily": "arial",
+          "fontSizes": [15, 80],
+          "padding": 1,
+          "rotationAngles": [0, 0],
+          "rotations": 2,
+          "scale": "sqrt",
+          "spiral": "archimedean",
+          "transitionDuration": 800
+        }
+      },
+      "pluginVersion": "1.2.11",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 21}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "(Needs repair) Who do you think is most affected by these weather events?",
+      "type": "magnesium-wordcloud-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
         "uid": "ef3bg0xych0cge"
       },
       "fieldConfig": {
@@ -643,7 +808,7 @@
         "h": 15,
         "w": 12,
         "x": 0,
-        "y": 60
+        "y": 72
       },
       "id": 12,
       "options": {
@@ -706,7 +871,7 @@
         "h": 15,
         "w": 12,
         "x": 12,
-        "y": 60
+        "y": 72
       },
       "id": 13,
       "options": {
@@ -781,7 +946,7 @@
         "h": 15,
         "w": 12,
         "x": 0,
-        "y": 75
+        "y": 87
       },
       "id": 14,
       "options": {
@@ -844,7 +1009,7 @@
         "h": 15,
         "w": 12,
         "x": 12,
-        "y": 75
+        "y": 87
       },
       "id": 15,
       "options": {
@@ -915,7 +1080,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 90
+        "y": 102
       },
       "id": 2,
       "options": {
@@ -946,5 +1111,5 @@
   "timezone": "browser",
   "title": "GIZ Siaya",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 14
+  "version": 25
 }
