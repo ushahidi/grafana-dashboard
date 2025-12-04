@@ -251,7 +251,7 @@ ENTRYPOINT [ "/run.sh" ]
 # + provisioning files for configuration. If you want to bake a grafana.ini into
 # the image, re-enable the COPY line below.
 #
-# COPY conf/custom.ini /etc/grafana/grafana.ini
+COPY conf/custom.ini /etc/grafana/grafana.ini
 
 # Copy the entire provisioning directory so that all datasources / dashboards / etc.
 # are present in the image at build time. This makes the container self-contained.
@@ -261,3 +261,17 @@ COPY conf/provisioning/dashboards /etc/grafana/provisioning/dashboards
 
 # (optional) If your repo contains public custom images, copy them in:
 COPY public/img/custom /usr/share/grafana/public/img/custom
+
+# --- Begin: copy local plugins into image ---
+# Make sure `data/plugins` exists in your build context (the directory you run docker build from)
+# and is not excluded by .dockerignore.
+COPY data/plugins ${GF_PATHS_PLUGINS}/
+
+# Ensure correct ownership (use numeric uid/gid so it works in build-time)
+# and reasonable permissions so Grafana (running as non-root) can read/execute plugin files.
+USER root
+RUN chown -R ${GF_UID}:${GF_GID} ${GF_PATHS_PLUGINS} || true && \
+    chmod -R a+rX ${GF_PATHS_PLUGINS}
+# --- End: copy local plugins into image ---
+
+USER "$GF_UID"

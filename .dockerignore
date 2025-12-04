@@ -6,6 +6,8 @@
 bin
 !bin/grafana-linux-k8s
 data*
+!data/
+!data/plugins/
 dist
 docker
 Dockerfile
