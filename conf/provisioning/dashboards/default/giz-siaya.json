@@ -551,61 +551,6 @@
       "type": "piechart"
     },
     {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 8,
-        "w": 12,
-        "x": 0,
-        "y": 50
-      },
-      "id": 11,
-      "options": {
-        "series_index": 0,
-        "wordCloudOptions": {
-          "deterministic": true,
-          "enableTooltip": true,
-          "fontFamily": "arial",
-          "fontSizes": [15, 80],
-          "padding": 1,
-          "rotationAngles": [0, 0],
-          "rotations": 2,
-          "scale": "sqrt",
-          "spiral": "archimedean",
-          "transitionDuration": 800
-        }
-      },
-      "pluginVersion": "1.2.11",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 28}}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Which source of information do you trust most to provide guidance during climate-related events?",
-      "type": "magnesium-wordcloud-panel"
-    },
-    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -614,7 +559,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 58
+        "y": 50
       },
       "id": 5,
       "options": {
@@ -643,7 +588,7 @@
         "h": 12,
         "w": 8,
         "x": 0,
-        "y": 60
+        "y": 52
       },
       "id": 16,
       "options": {
@@ -698,7 +643,7 @@
         "h": 12,
         "w": 8,
         "x": 8,
-        "y": 60
+        "y": 52
       },
       "id": 17,
       "options": {
@@ -753,7 +698,7 @@
         "h": 12,
         "w": 8,
         "x": 16,
-        "y": 60
+        "y": 52
       },
       "id": 18,
       "options": {
@@ -808,7 +753,7 @@
         "h": 15,
         "w": 12,
         "x": 0,
-        "y": 72
+        "y": 64
       },
       "id": 12,
       "options": {
@@ -871,7 +816,7 @@
         "h": 15,
         "w": 12,
         "x": 12,
-        "y": 72
+        "y": 64
       },
       "id": 13,
       "options": {
@@ -946,7 +891,7 @@
         "h": 15,
         "w": 12,
         "x": 0,
-        "y": 87
+        "y": 79
       },
       "id": 14,
       "options": {
@@ -1009,7 +954,7 @@
         "h": 15,
         "w": 12,
         "x": 12,
-        "y": 87
+        "y": 79
       },
       "id": 15,
       "options": {
@@ -1072,6 +1017,70 @@
       "type": "piechart"
     },
     {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "ef3bg0xych0cge"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 12,
+        "x": 0,
+        "y": 94
+      },
+      "id": 19,
+      "options": {
+        "barColor": "green",
+        "decimalPlaces": 1,
+        "fieldCategory": "category",
+        "fieldKeywords": "keywords",
+        "fieldMentionsCount": "mentions_count",
+        "fieldMentionsPercent": "mentions_percent",
+        "showNumbering": false,
+        "title": "What help do you think your household or community needs most to better adapt to weather changes? (Ushahidi Platform)"
+      },
+      "pluginVersion": "1.0.0",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"support_needs\" }}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "mentions_percent"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "max-progressbars-panel"
+    },
+    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -1080,7 +1089,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 102
+        "y": 109
       },
       "id": 2,
       "options": {
@@ -1111,5 +1120,5 @@
   "timezone": "browser",
   "title": "GIZ Siaya",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 25
+  "version": 33
 }
