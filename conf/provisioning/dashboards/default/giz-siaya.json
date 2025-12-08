@@ -18,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 47,
   "links": [],
   "panels": [
     {
@@ -854,6 +854,7 @@
               "type": "number"
             }
           ],
+          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
             "uid": "ef3bg0xych0cge"
@@ -864,8 +865,8 @@
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -941,6 +942,7 @@
               "type": "number"
             }
           ],
+          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
             "uid": "ef3bg0xych0cge"
@@ -951,8 +953,8 @@
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -1120,5 +1122,5 @@
   "timezone": "browser",
   "title": "GIZ Siaya",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 1
+  "version": 38
 }
