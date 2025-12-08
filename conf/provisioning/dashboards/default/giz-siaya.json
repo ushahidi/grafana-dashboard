@@ -846,7 +846,7 @@
           "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "ef3bg0xych0cge"
+            "uid": "cf5digrig99fkc"
           },
           "filters": [],
           "format": "table",
@@ -937,7 +937,7 @@
           "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "ef3bg0xych0cge"
+            "uid": "cf5digrig99fkc"
           },
           "filters": [],
           "format": "table",
