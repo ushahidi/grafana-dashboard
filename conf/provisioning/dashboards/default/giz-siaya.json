@@ -18,7 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 47,
+  "id": 1,
   "links": [],
   "panels": [
     {
@@ -743,14 +743,14 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "ef3bg0xych0cge"
+        "uid": "cf5digrig99fkc"
       },
       "fieldConfig": {
         "defaults": {},
         "overrides": []
       },
       "gridPos": {
-        "h": 15,
+        "h": 37,
         "w": 12,
         "x": 0,
         "y": 64
@@ -779,7 +779,7 @@
           "root_selector": "data",
           "source": "url",
           "type": "json",
-          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url": "",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
@@ -794,7 +794,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "ef3bg0xych0cge"
+        "uid": "cf5digrig99fkc"
       },
       "fieldConfig": {
         "defaults": {
@@ -866,7 +866,7 @@
           "root_selector": "data",
           "source": "url",
           "type": "json",
-          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url": "",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
@@ -881,58 +881,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "ef3bg0xych0cge"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 15,
-        "w": 12,
-        "x": 0,
-        "y": 79
-      },
-      "id": 14,
-      "options": {
-        "barColor": "green",
-        "decimalPlaces": 1,
-        "fieldCategory": "category",
-        "fieldDescription": "description",
-        "fieldKeywords": "keywords",
-        "fieldMentionsCount": "mentions_count",
-        "fieldMentionsPercent": "mentions_percent",
-        "showNumbering": false,
-        "title": "How has the weather change affected your household/community in the last 3-5 years? (Ushahidi Platform)"
-      },
-      "pluginVersion": "1.0.0",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "https://pier.nethope-ng.ushahidi.com/data",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes\" }}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "",
-      "type": "max-progressbars-panel"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "ef3bg0xych0cge"
+        "uid": "cf5digrig99fkc"
       },
       "fieldConfig": {
         "defaults": {
@@ -1004,7 +953,7 @@
           "root_selector": "data",
           "source": "url",
           "type": "json",
-          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url": "",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
@@ -1019,16 +968,16 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "ef3bg0xych0cge"
+        "uid": "cf5digrig99fkc"
       },
       "fieldConfig": {
         "defaults": {},
         "overrides": []
       },
       "gridPos": {
-        "h": 15,
+        "h": 34,
         "w": 12,
-        "x": 0,
+        "x": 12,
         "y": 94
       },
       "id": 19,
@@ -1054,7 +1003,7 @@
           "root_selector": "data",
           "source": "url",
           "type": "json",
-          "url": "https://pier.nethope-ng.ushahidi.com/data",
+          "url": "",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
@@ -1081,6 +1030,57 @@
       "type": "max-progressbars-panel"
     },
     {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 37,
+        "w": 12,
+        "x": 0,
+        "y": 101
+      },
+      "id": 14,
+      "options": {
+        "barColor": "green",
+        "decimalPlaces": 1,
+        "fieldCategory": "category",
+        "fieldDescription": "description",
+        "fieldKeywords": "keywords",
+        "fieldMentionsCount": "mentions_count",
+        "fieldMentionsPercent": "mentions_percent",
+        "showNumbering": false,
+        "title": "How has the weather change affected your household/community in the last 3-5 years? (Ushahidi Platform)"
+      },
+      "pluginVersion": "1.0.0",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes\" }}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "",
+      "type": "max-progressbars-panel"
+    },
+    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -1089,7 +1089,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 109
+        "y": 138
       },
       "id": 2,
       "options": {
@@ -1120,5 +1120,5 @@
   "timezone": "browser",
   "title": "GIZ Siaya",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 33
+  "version": 1
 }
