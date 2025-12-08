@@ -818,7 +818,7 @@
         "x": 12,
         "y": 64
       },
-      "id": 13,
+      "id": 20,
       "options": {
         "displayLabels": ["percent"],
         "legend": {
@@ -829,7 +829,7 @@
         "pieType": "pie",
         "reduceOptions": {
           "calcs": ["lastNotNull"],
-          "fields": "/^Mentions$/",
+          "fields": "",
           "values": true
         },
         "sort": "desc",
@@ -842,18 +842,7 @@
       "pluginVersion": "12.3.0-pre",
       "targets": [
         {
-          "columns": [
-            {
-              "selector": "category",
-              "text": "Labels",
-              "type": "string"
-            },
-            {
-              "selector": "mentions_percent",
-              "text": "Mentions",
-              "type": "number"
-            }
-          ],
+          "columns": [],
           "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
@@ -877,6 +866,20 @@
         }
       ],
       "title": "What do you think is causing these changes in patterns or the weather events? (Facebook, X and YouTube)",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "Mentions"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
       "type": "piechart"
     },
     {
@@ -906,7 +909,7 @@
         "x": 12,
         "y": 79
       },
-      "id": 15,
+      "id": 21,
       "options": {
         "displayLabels": ["percent"],
         "legend": {
@@ -917,7 +920,7 @@
         "pieType": "pie",
         "reduceOptions": {
           "calcs": ["lastNotNull"],
-          "fields": "/^Mentions$/",
+          "fields": "",
           "values": true
         },
         "sort": "desc",
@@ -930,18 +933,7 @@
       "pluginVersion": "12.3.0-pre",
       "targets": [
         {
-          "columns": [
-            {
-              "selector": "category",
-              "text": "Labels",
-              "type": "string"
-            },
-            {
-              "selector": "mentions_percent",
-              "text": "Mentions",
-              "type": "number"
-            }
-          ],
+          "columns": [],
           "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
@@ -965,6 +957,20 @@
         }
       ],
       "title": "(To be confirmed) How has the weather change affected your household/community in the last 3-5 years? (Facebook, X and YouTube)",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "Mentions"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
       "type": "piechart"
     },
     {
@@ -1122,5 +1128,5 @@
   "timezone": "browser",
   "title": "GIZ Siaya",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 38
+  "version": 48
 }
