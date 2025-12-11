@@ -351,13 +351,7 @@
       "pluginVersion": "12.3.0-pre",
       "targets": [
         {
-          "columns": [
-            {
-              "selector": "",
-              "text": "",
-              "type": "string"
-            }
-          ],
+          "columns": [],
           "data": "label,value\n\"Farming Inputs, Tools and Equipment\",402\nInfrastructure & Housing,146\nFinancial Support & Funding,188\nCommunity Support & Governance,105\n\"Training, Education and Awareness\",204\n\"Water Access, Storage and Irrigation\",178\nClimate & Weather Risk Management,59\nRelocation & Resettlement support,21",
           "filters": [],
           "format": "table",
@@ -552,6 +546,44 @@
         }
       ],
       "title": "Have you received any information/training in the past years on how to prepare for floods, droughts, or any other weather events?",
+      "transformations": [
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "Yes"
+                  }
+                },
+                "fieldName": "label"
+              },
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "No"
+                  }
+                },
+                "fieldName": "label"
+              },
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "I don't know"
+                  }
+                },
+                "fieldName": "label"
+              }
+            ],
+            "match": "any",
+            "type": "include"
+          }
+        }
+      ],
       "type": "piechart"
     },
     {
