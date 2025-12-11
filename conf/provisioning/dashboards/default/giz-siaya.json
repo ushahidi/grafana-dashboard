@@ -222,14 +222,15 @@
       "targets": [
         {
           "columns": [],
+          "data": "label,value\n\"Water Management, Flood Prevention & Drainage\",254\nHeat Protection & Sun Safety,171\nTree Planting & Environmental Restoration,188\n\"Farming Knowledge, Cooperatives & Groups\",174\nUsing Solar Energy,48\nEducation & Climate Learning,97\nDrought Management & Water Storage,223\nBrick Making & Protection,166\nRoad Repair & Community Work-Groups,136\n\"Risk Control & Safety Measures during Rain\",163\n\"Farm Management, Soil Conservation & Productivity\",72\n\"Financial Preparedness, Saving & Risk Reduction\",112\nPlanting Drought-Resistant & Climate-Smart Crops,15\nStoring Goods & Stock Safely,14\nPersonal Safety & Maintenance,29\nEnvironmental Cleaning,4",
           "filters": [],
           "format": "table",
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -242,30 +243,27 @@
       "title": "How are you adjusting to the weather events affecting your household/community?",
       "transformations": [
         {
-          "id": "filterByValue",
+          "id": "convertFieldType",
           "options": {
-            "filters": [
+            "conversions": [
               {
-                "config": {
-                  "id": "lower",
-                  "options": {
-                    "value": "10"
-                  }
-                },
-                "fieldName": "value"
-              },
-              {
-                "config": {
-                  "id": "substring",
-                  "options": {
-                    "value": "nothing"
-                  }
-                },
-                "fieldName": "label"
+                "destinationType": "number",
+                "targetField": "value"
               }
             ],
-            "match": "any",
-            "type": "exclude"
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "value"
+              }
+            ]
           }
         }
       ],
@@ -353,15 +351,22 @@
       "pluginVersion": "12.3.0-pre",
       "targets": [
         {
-          "columns": [],
+          "columns": [
+            {
+              "selector": "",
+              "text": "",
+              "type": "string"
+            }
+          ],
+          "data": "label,value\n\"Farming Inputs, Tools and Equipment\",402\nInfrastructure & Housing,146\nFinancial Support & Funding,188\nCommunity Support & Governance,105\n\"Training, Education and Awareness\",204\n\"Water Access, Storage and Irrigation\",178\nClimate & Weather Risk Management,59\nRelocation & Resettlement support,21",
           "filters": [],
           "format": "table",
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -374,30 +379,27 @@
       "title": "What help do you think your household or community needs most to better adapt to weather changes?",
       "transformations": [
         {
-          "id": "filterByValue",
+          "id": "convertFieldType",
           "options": {
-            "filters": [
+            "conversions": [
               {
-                "config": {
-                  "id": "lower",
-                  "options": {
-                    "value": "11"
-                  }
-                },
-                "fieldName": "value"
-              },
-              {
-                "config": {
-                  "id": "substring",
-                  "options": {
-                    "value": "I don't know"
-                  }
-                },
-                "fieldName": "label"
+                "destinationType": "number",
+                "targetField": "value"
               }
             ],
-            "match": "any",
-            "type": "exclude"
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "value"
+              }
+            ]
           }
         }
       ],
