@@ -171,6 +171,7 @@
               "mode": "off"
             }
           },
+          "decimals": 2,
           "displayName": "Adjustments Methods",
           "mappings": [],
           "thresholds": {
@@ -185,7 +186,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
         "overrides": []
       },
@@ -222,7 +224,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "label,value\n\"Water Management, Flood Prevention & Drainage\",254\nHeat Protection & Sun Safety,171\nTree Planting & Environmental Restoration,188\n\"Farming Knowledge, Cooperatives & Groups\",174\nUsing Solar Energy,48\nEducation & Climate Learning,97\nDrought Management & Water Storage,223\nBrick Making & Protection,166\nRoad Repair & Community Work-Groups,136\n\"Risk Control & Safety Measures during Rain\",163\n\"Farm Management, Soil Conservation & Productivity\",72\n\"Financial Preparedness, Saving & Risk Reduction\",112\nPlanting Drought-Resistant & Climate-Smart Crops,15\nStoring Goods & Stock Safely,14\nPersonal Safety & Maintenance,29\nEnvironmental Cleaning,4",
+          "data": "label,percentage\n\"Water Management, Flood Prevention & Drainage\",13.61\nHeat Protection & Sun Safety,9.16\nTree Planting & Environmental Restoration,10.08\n\"Farming Knowledge, Cooperatives & Groups\",9.32\nUsing Solar Energy,2.57\nEducation & Climate Learning,5.20\nDrought Management & Water Storage,11.95\nBrick Making & Protection,8.90\nRoad Repair & Community Work-Groups,7.29\n\"Risk Control & Safety Measures during Rain\",8.74\n\"Farm Management, Soil Conservation & Productivity\",3.86\n\"Financial Preparedness, Saving & Risk Reduction\",6.00\nPlanting Drought-Resistant & Climate-Smart Crops,0.80\nStoring Goods & Stock Safely,0.75\nPersonal Safety & Maintenance,1.55\nEnvironmental Cleaning,0.21",
           "filters": [],
           "format": "table",
           "global_query_id": "",
@@ -248,7 +250,7 @@
             "conversions": [
               {
                 "destinationType": "number",
-                "targetField": "value"
+                "targetField": "percentage"
               }
             ],
             "fields": {}
@@ -261,7 +263,7 @@
             "sort": [
               {
                 "desc": true,
-                "field": "value"
+                "field": "percentage"
               }
             ]
           }
@@ -315,7 +317,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
         "overrides": []
       },
@@ -352,7 +355,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "label,value\n\"Farming Inputs, Tools and Equipment\",402\nInfrastructure & Housing,146\nFinancial Support & Funding,188\nCommunity Support & Governance,105\n\"Training, Education and Awareness\",204\n\"Water Access, Storage and Irrigation\",178\nClimate & Weather Risk Management,59\nRelocation & Resettlement support,21",
+          "data": "label,percentage\n\"Farming Inputs, Tools and Equipment\",30.85\nInfrastructure & Housing,11.20\nFinancial Support & Funding,14.43\nCommunity Support & Governance,8.06\n\"Training, Education and Awareness\",15.66\n\"Water Access, Storage and Irrigation\",13.66\nClimate & Weather Risk Management,4.53\nRelocation & Resettlement support,1.61",
           "filters": [],
           "format": "table",
           "global_query_id": "",
@@ -378,7 +381,7 @@
             "conversions": [
               {
                 "destinationType": "number",
-                "targetField": "value"
+                "targetField": "percentage"
               }
             ],
             "fields": {}
@@ -391,7 +394,7 @@
             "sort": [
               {
                 "desc": true,
-                "field": "value"
+                "field": "percentage"
               }
             ]
           }
