@@ -807,7 +807,7 @@
           }
         }
       ],
-      "title": "(Needs repair) Who do you think is most affected by these weather events?",
+      "title": "Who do you think is most affected by these weather events?",
       "transformations": [
         {
           "id": "convertFieldType",
