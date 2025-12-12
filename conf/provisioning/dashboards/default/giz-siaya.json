@@ -636,27 +636,28 @@
           "deterministic": true,
           "enableTooltip": true,
           "fontFamily": "arial",
-          "fontSizes": [15, 80],
+          "fontSizes": [20, 80],
           "padding": 1,
           "rotationAngles": [0, 0],
           "rotations": 2,
           "scale": "sqrt",
           "spiral": "archimedean",
-          "transitionDuration": 800
+          "transitionDuration": 0
         }
       },
       "pluginVersion": "1.2.11",
       "targets": [
         {
           "columns": [],
+          "data": "label,value\nDrought,1271\nFloods,533\nHeatwaves,105\nHailstones,23\nSoil,14\nHailstorms,13\nSun,1",
           "filters": [],
           "format": "table",
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -667,6 +668,20 @@
         }
       ],
       "title": "Which is the main weather event that affects your household/community most?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "value"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
       "type": "magnesium-wordcloud-panel"
     },
     {
@@ -688,30 +703,31 @@
       "options": {
         "series_index": 0,
         "wordCloudOptions": {
-          "deterministic": true,
+          "deterministic": false,
           "enableTooltip": true,
           "fontFamily": "arial",
-          "fontSizes": [15, 80],
+          "fontSizes": [20, 80],
           "padding": 1,
           "rotationAngles": [0, 0],
           "rotations": 2,
           "scale": "sqrt",
           "spiral": "archimedean",
-          "transitionDuration": 800
+          "transitionDuration": 0
         }
       },
       "pluginVersion": "1.2.11",
       "targets": [
         {
           "columns": [],
+          "data": "label,value\nRadio,434\nLocal Government Announcements,465\nAgriculture extension officers,237\nTV,155\nAgriculture officer,89\nInternet,22\nReligious leaders,24\nSchools,9\nNeighbours and friends,7\nTown hall meetings/Community meetings,7\nI do not trust any source,5\n\"Social media (e.g., Facebook, WhatsApp)\",9\nI do not receive such information,4\nNewspaper,4\nMobile phone alerts,3",
           "filters": [],
           "format": "table",
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -722,6 +738,20 @@
         }
       ],
       "title": "Which source of information do you trust most to provide guidance during climate-related events?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "value"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
       "type": "magnesium-wordcloud-panel"
     },
     {
@@ -743,7 +773,7 @@
       "options": {
         "series_index": 0,
         "wordCloudOptions": {
-          "deterministic": true,
+          "deterministic": false,
           "enableTooltip": true,
           "fontFamily": "arial",
           "fontSizes": [15, 80],
@@ -751,22 +781,23 @@
           "rotationAngles": [0, 0],
           "rotations": 2,
           "scale": "sqrt",
-          "spiral": "archimedean",
-          "transitionDuration": 800
+          "spiral": "rectangular",
+          "transitionDuration": 0
         }
       },
       "pluginVersion": "1.2.11",
       "targets": [
         {
           "columns": [],
+          "data": "label,value\nYouth,484\nFarmers,402\nWomen,366\nMe,194\nMen,158\nChildren,130\nElderly,125\nAdults,56\nPastoralists,21\nOther,14\nPeople with Disabilities,10",
           "filters": [],
           "format": "table",
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -776,7 +807,21 @@
           }
         }
       ],
-      "title": "(Needs repair) Who do you think is most affected by these weather events?",
+      "title": "Who do you think is most affected by these weather events?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "value"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
       "type": "magnesium-wordcloud-panel"
     },
     {
