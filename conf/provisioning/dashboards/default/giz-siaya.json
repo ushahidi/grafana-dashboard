@@ -171,6 +171,8 @@
               "mode": "off"
             }
           },
+          "decimals": 2,
+          "displayName": "Adjustments Methods",
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -184,7 +186,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
         "overrides": []
       },
@@ -204,7 +207,7 @@
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom",
-          "showLegend": false
+          "showLegend": true
         },
         "orientation": "horizontal",
         "showValue": "auto",
@@ -221,14 +224,15 @@
       "targets": [
         {
           "columns": [],
+          "data": "label,percentage\n\"Water Management, Flood Prevention & Drainage\",13.61\nHeat Protection & Sun Safety,9.16\nTree Planting & Environmental Restoration,10.08\n\"Farming Knowledge, Cooperatives & Groups\",9.32\nUsing Solar Energy,2.57\nEducation & Climate Learning,5.20\nDrought Management & Water Storage,11.95\nBrick Making & Protection,8.90\nRoad Repair & Community Work-Groups,7.29\n\"Risk Control & Safety Measures during Rain\",8.74\n\"Farm Management, Soil Conservation & Productivity\",3.86\n\"Financial Preparedness, Saving & Risk Reduction\",6.00\nPlanting Drought-Resistant & Climate-Smart Crops,0.80\nStoring Goods & Stock Safely,0.75\nPersonal Safety & Maintenance,1.55\nEnvironmental Cleaning,0.21",
           "filters": [],
           "format": "table",
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -241,30 +245,27 @@
       "title": "How are you adjusting to the weather events affecting your household/community?",
       "transformations": [
         {
-          "id": "filterByValue",
+          "id": "convertFieldType",
           "options": {
-            "filters": [
+            "conversions": [
               {
-                "config": {
-                  "id": "lower",
-                  "options": {
-                    "value": "10"
-                  }
-                },
-                "fieldName": "value"
-              },
-              {
-                "config": {
-                  "id": "substring",
-                  "options": {
-                    "value": "nothing"
-                  }
-                },
-                "fieldName": "label"
+                "destinationType": "number",
+                "targetField": "percentage"
               }
             ],
-            "match": "any",
-            "type": "exclude"
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
           }
         }
       ],
@@ -302,6 +303,7 @@
               "mode": "off"
             }
           },
+          "displayName": "Types of Help",
           "mappings": [],
           "thresholds": {
             "mode": "absolute",
@@ -315,7 +317,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
         "overrides": []
       },
@@ -335,7 +338,7 @@
           "calcs": [],
           "displayMode": "list",
           "placement": "bottom",
-          "showLegend": false
+          "showLegend": true
         },
         "orientation": "horizontal",
         "showValue": "auto",
@@ -352,14 +355,15 @@
       "targets": [
         {
           "columns": [],
+          "data": "label,percentage\n\"Farming Inputs, Tools and Equipment\",30.85\nInfrastructure & Housing,11.20\nFinancial Support & Funding,14.43\nCommunity Support & Governance,8.06\n\"Training, Education and Awareness\",15.66\n\"Water Access, Storage and Irrigation\",13.66\nClimate & Weather Risk Management,4.53\nRelocation & Resettlement support,1.61",
           "filters": [],
           "format": "table",
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
@@ -372,30 +376,27 @@
       "title": "What help do you think your household or community needs most to better adapt to weather changes?",
       "transformations": [
         {
-          "id": "filterByValue",
+          "id": "convertFieldType",
           "options": {
-            "filters": [
+            "conversions": [
               {
-                "config": {
-                  "id": "lower",
-                  "options": {
-                    "value": "11"
-                  }
-                },
-                "fieldName": "value"
-              },
-              {
-                "config": {
-                  "id": "substring",
-                  "options": {
-                    "value": "I don't know"
-                  }
-                },
-                "fieldName": "label"
+                "destinationType": "number",
+                "targetField": "percentage"
               }
             ],
-            "match": "any",
-            "type": "exclude"
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
           }
         }
       ],
@@ -548,6 +549,44 @@
         }
       ],
       "title": "Have you received any information/training in the past years on how to prepare for floods, droughts, or any other weather events?",
+      "transformations": [
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "Yes"
+                  }
+                },
+                "fieldName": "label"
+              },
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "No"
+                  }
+                },
+                "fieldName": "label"
+              },
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "I don't know"
+                  }
+                },
+                "fieldName": "label"
+              }
+            ],
+            "match": "any",
+            "type": "include"
+          }
+        }
+      ],
       "type": "piechart"
     },
     {
@@ -750,7 +789,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 37,
+        "h": 35,
         "w": 12,
         "x": 0,
         "y": 64
@@ -1047,10 +1086,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 37,
+        "h": 35,
         "w": 12,
         "x": 0,
-        "y": 101
+        "y": 99
       },
       "id": 14,
       "options": {
@@ -1097,7 +1136,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 138
+        "y": 134
       },
       "id": 2,
       "options": {
