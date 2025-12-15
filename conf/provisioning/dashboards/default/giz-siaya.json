@@ -834,7 +834,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 35,
+        "h": 30,
         "w": 12,
         "x": 0,
         "y": 64
@@ -867,12 +867,26 @@
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes\" }}]}",
+            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2115:19\"} }]}\n",
             "method": "POST"
           }
         }
       ],
       "title": "",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "mentions_count"
+              }
+            ]
+          }
+        }
+      ],
       "type": "max-progressbars-panel"
     },
     {
@@ -1067,74 +1081,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 34,
-        "w": 12,
-        "x": 12,
-        "y": 94
-      },
-      "id": 19,
-      "options": {
-        "barColor": "green",
-        "decimalPlaces": 1,
-        "fieldCategory": "category",
-        "fieldKeywords": "keywords",
-        "fieldMentionsCount": "mentions_count",
-        "fieldMentionsPercent": "mentions_percent",
-        "showNumbering": false,
-        "title": "What help do you think your household or community needs most to better adapt to weather changes? (Ushahidi Platform)"
-      },
-      "pluginVersion": "1.0.0",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"support_needs\" }}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "",
-      "transformations": [
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "mentions_percent"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "max-progressbars-panel"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 35,
+        "h": 44,
         "w": 12,
         "x": 0,
-        "y": 99
+        "y": 94
       },
       "id": 14,
       "options": {
@@ -1164,12 +1114,91 @@
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes\" }}]}",
+            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2115:15\"} }]}\n",
             "method": "POST"
           }
         }
       ],
       "title": "",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "mentions_count"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "max-progressbars-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 29,
+        "w": 12,
+        "x": 12,
+        "y": 94
+      },
+      "id": 19,
+      "options": {
+        "barColor": "green",
+        "decimalPlaces": 1,
+        "fieldCategory": "category",
+        "fieldDescription": "description",
+        "fieldKeywords": "keywords",
+        "fieldMentionsCount": "mentions_count",
+        "fieldMentionsPercent": "mentions_percent",
+        "showNumbering": false,
+        "title": "What help do you think your household or community needs most to better adapt to weather changes? (Ushahidi Platform)"
+      },
+      "pluginVersion": "1.0.0",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2119\"} }]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "mentions_percent"
+              }
+            ]
+          }
+        }
+      ],
       "type": "max-progressbars-panel"
     },
     {
@@ -1181,7 +1210,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 134
+        "y": 138
       },
       "id": 2,
       "options": {
