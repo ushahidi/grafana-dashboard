@@ -58,9 +58,43 @@
         "y": 7
       },
       "id": 3,
-      "options": {},
+      "options": {
+        "activeTheme": "Grafana",
+        "disableThemePicker": true,
+        "themes": [
+          {
+            "name": "Grafana",
+            "styles": [
+              {
+                "props": {
+                  "theme": "default"
+                },
+                "type": "basetheme"
+              },
+              {
+                "props": {
+                  "url": ""
+                },
+                "type": "bgimage"
+              },
+              {
+                "props": {
+                  "url": ""
+                },
+                "type": "url"
+              },
+              {
+                "props": {
+                  "text": "body {\n  background-color: #ffffff;\n}\n.css-kuoxh-panel-content {\n  border-radius: 20px !important;\n  overflow: hidden !important;\n}\n\ndiv#\\356 {\nborder: none;\n}\n.css-1f8mf9c-LegendLabel,\n[data-testid=\"series-icon\"] {\n  pointer-events: none !important;\n  cursor: default !important;\n}"
+                },
+                "type": "style"
+              }
+            ]
+          }
+        ]
+      },
       "pluginVersion": "0.2.1",
-      "title": "Boom Theme (In Progress)",
+      "title": "",
       "type": "yesoreyeram-boomtheme-panel"
     },
     {
@@ -192,7 +226,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 12,
+        "h": 14,
         "w": 12,
         "x": 0,
         "y": 29
@@ -323,7 +357,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 12,
+        "h": 14,
         "w": 12,
         "x": 12,
         "y": 29
@@ -425,10 +459,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 10,
         "w": 12,
         "x": 0,
-        "y": 41
+        "y": 43
       },
       "id": 8,
       "options": {
@@ -501,10 +535,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
+        "h": 10,
         "w": 12,
         "x": 12,
-        "y": 41
+        "y": 43
       },
       "id": 10,
       "options": {
@@ -598,7 +632,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 50
+        "y": 53
       },
       "id": 5,
       "options": {
@@ -607,7 +641,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">🔄</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Insights</h3>\n    <p style=\"margin:4px 0 0;\">Causes and Effects of Climate Change</p>\n  </div>\n</div>",
+        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">📊</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Insights</h3>\n    <p style=\"margin:4px 0 0;\">Causes and Effects of Climate Change</p>\n  </div>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "12.3.0-pre",
@@ -627,7 +661,7 @@
         "h": 12,
         "w": 8,
         "x": 0,
-        "y": 52
+        "y": 55
       },
       "id": 16,
       "options": {
@@ -697,7 +731,7 @@
         "h": 12,
         "w": 8,
         "x": 8,
-        "y": 52
+        "y": 55
       },
       "id": 17,
       "options": {
@@ -767,7 +801,7 @@
         "h": 12,
         "w": 8,
         "x": 16,
-        "y": 52
+        "y": 55
       },
       "id": 18,
       "options": {
@@ -837,7 +871,7 @@
         "h": 30,
         "w": 12,
         "x": 0,
-        "y": 64
+        "y": 67
       },
       "id": 12,
       "options": {
@@ -914,7 +948,7 @@
         "h": 15,
         "w": 12,
         "x": 12,
-        "y": 64
+        "y": 67
       },
       "id": 20,
       "options": {
@@ -1005,7 +1039,7 @@
         "h": 15,
         "w": 12,
         "x": 12,
-        "y": 79
+        "y": 82
       },
       "id": 21,
       "options": {
@@ -1084,7 +1118,7 @@
         "h": 44,
         "w": 12,
         "x": 0,
-        "y": 94
+        "y": 97
       },
       "id": 14,
       "options": {
@@ -1146,10 +1180,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 29,
+        "h": 31,
         "w": 12,
         "x": 12,
-        "y": 94
+        "y": 97
       },
       "id": 19,
       "options": {
@@ -1210,7 +1244,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 138
+        "y": 141
       },
       "id": 2,
       "options": {
