@@ -967,6 +967,270 @@
       "type": "barchart"
     },
     {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-blue",
+            "mode": "fixed"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "decimals": 2,
+          "displayName": "Topics",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 12,
+        "x": 0,
+        "y": 59
+      },
+      "id": 29,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "data": "value,percentage\nAdaptation needs,3.72\nAdaptation practices,0.07\nAdaptation practices (community),19.10\nChannels Reported On,0.52\nClimate awareness,32.27\nClimate risks,8.47\nGovernment response,10.63\nLivelihood impacts,4.30\nNot relevant,12.39\nPerceptions,2.93\nPerspections,0.07\nPerspectives,0.07\nSupport Needed,5.48",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Topics (All Social Media)",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "percentage"
+              }
+            ],
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-orange",
+            "mode": "fixed"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "decimals": 2,
+          "displayName": "Emotions",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 11,
+        "w": 12,
+        "x": 12,
+        "y": 59
+      },
+      "id": 30,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "data": "emotions,percentage\nAnger,0.55\nConcern,0.18\nConfusion,0.61\nCuriosity,0.06\nEmpathy,1.28\nFear,1.65\nFrustration,8.38\nGratitude,15.17\nHope,43.67\nHopelessness,0.06\nMisery,0.06\nNeutral,1.41\nPositive,0.12\nSadness,2.51\nUnclear,14.56\nUrgency,9.72",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Emotions (All Social Media)",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "percentage"
+              }
+            ],
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -975,7 +1239,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 59
+        "y": 70
       },
       "id": 22,
       "options": {
@@ -1046,7 +1310,7 @@
         "h": 14,
         "w": 12,
         "x": 0,
-        "y": 61
+        "y": 72
       },
       "id": 6,
       "options": {
@@ -1177,7 +1441,7 @@
         "h": 14,
         "w": 12,
         "x": 12,
-        "y": 61
+        "y": 72
       },
       "id": 7,
       "options": {
@@ -1279,7 +1543,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 75
+        "y": 86
       },
       "id": 8,
       "options": {
@@ -1355,7 +1619,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 75
+        "y": 86
       },
       "id": 10,
       "options": {
@@ -1449,7 +1713,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 85
+        "y": 96
       },
       "id": 5,
       "options": {
@@ -1478,7 +1742,7 @@
         "h": 12,
         "w": 8,
         "x": 0,
-        "y": 87
+        "y": 98
       },
       "id": 16,
       "options": {
@@ -1548,7 +1812,7 @@
         "h": 12,
         "w": 8,
         "x": 8,
-        "y": 87
+        "y": 98
       },
       "id": 17,
       "options": {
@@ -1618,7 +1882,7 @@
         "h": 12,
         "w": 8,
         "x": 16,
-        "y": 87
+        "y": 98
       },
       "id": 18,
       "options": {
@@ -1688,7 +1952,7 @@
         "h": 30,
         "w": 12,
         "x": 0,
-        "y": 99
+        "y": 110
       },
       "id": 12,
       "options": {
@@ -1765,7 +2029,7 @@
         "h": 15,
         "w": 12,
         "x": 12,
-        "y": 99
+        "y": 110
       },
       "id": 20,
       "options": {
@@ -1856,7 +2120,7 @@
         "h": 15,
         "w": 12,
         "x": 12,
-        "y": 114
+        "y": 125
       },
       "id": 21,
       "options": {
@@ -1935,7 +2199,7 @@
         "h": 44,
         "w": 12,
         "x": 0,
-        "y": 129
+        "y": 140
       },
       "id": 14,
       "options": {
@@ -2000,7 +2264,7 @@
         "h": 31,
         "w": 12,
         "x": 12,
-        "y": 129
+        "y": 140
       },
       "id": 19,
       "options": {
@@ -2061,7 +2325,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 173
+        "y": 184
       },
       "id": 2,
       "options": {
