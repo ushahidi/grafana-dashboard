@@ -23,7 +23,8 @@ services:
       - ./conf/custom.ini:/etc/grafana/grafana.ini
       - ./conf/provisioning:/etc/grafana/provisioning
       - ./data:/var/lib/grafana
-      - ./public/img/custom:/usr/share/grafana/public/img/custom
+      - ./public/img:/usr/share/grafana/public/img
+      
     restart: unless-stopped
 
 networks:
