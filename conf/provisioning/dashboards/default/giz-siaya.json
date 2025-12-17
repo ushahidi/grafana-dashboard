@@ -929,7 +929,7 @@
         "displayLabels": ["percent", "name"],
         "legend": {
           "displayMode": "list",
-          "placement": "bottom",
+          "placement": "right",
           "showLegend": true
         },
         "pieType": "pie",
