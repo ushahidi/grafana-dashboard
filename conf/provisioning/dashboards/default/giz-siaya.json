@@ -129,7 +129,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "category,socialCount,socialPercent,language,languagePercent,totalVoices,totalPosts,socialMediaTotal\nTwitter,1667,45.3,English,45,5000,5000,3000\nFacebook,1667,33.3,Luo,32.5,,,\nYouTube,2387,78.5,Swahili,78.34,,,\nPlatform,5000,95.5,,,,,",
+          "data": "category,socialCount,socialPercent,totalVoices,totalPosts,socialMediaTotal\nPlatform,1960,57.0,3437,1960,1477\nTwitter,1005,29.2,,,\nYouTube,263,7.7,,,\nFacebook,209,6.1,,,",
           "filters": [],
           "format": "table",
           "global_query_id": "",
@@ -2430,5 +2430,5 @@
   "timezone": "browser",
   "title": "Kijiji Yeetu",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 125
+  "version": 128
 }
