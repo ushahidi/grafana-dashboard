@@ -39,7 +39,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px; border-radius: 5px;\">\n  <div style=\"display: flex; align-items: center;\">\n    <img src=\"/public/img/custom/kijijiyetu.png\" alt=\"Logo\" style=\"height: 128px; margin-right: 10px;\">\n  </div>\n</div>\n<div style=\"margin-top: 1em;\">\n  <h1 style=\"font-size: 1.5rem; font-weight: 700;\">\n    Community-driven Climate Action in Siaya County</h1>\n  <h2 style=\"font-size: 1.125rem; font-weight: 500;\">Using crowd-sourced data from social media and surveys to build evidence for climate adaptation and governance.</h2>\n</div>\n",
+        "content": "<div style=\"display: flex; align-items: center; justify-content: space-between; padding: 10px; width: 100%;\">\n    <img src=\"/public/img/custom/kijijiyetu.png\" alt=\"Kijiji Yeetu Logo\" style=\"height: 128px;\">\n    <img src=\"/public/img/custom/gizkenya.png\" alt=\"GIZ Kenya Logo\" style=\"height: 80px;\">\n    <img src=\"/public/img/custom/ushahidi-tag.png\" alt=\"Ushahidi Logo\" style=\"height: 40px;\">\n</div>\n<div style=\"margin-top: 1em;\">\n  <h1 style=\"font-size: 1.5rem; font-weight: 700;\">\n    Community-driven Climate Action in Siaya County</h1>\n  <h2 style=\"font-size: 1.125rem; font-weight: 500;\">Using crowd-sourced data from social media and surveys to build evidence for climate adaptation and governance.</h2>\n</div>\n",
         "mode": "html"
       },
       "pluginVersion": "12.3.0-pre",
@@ -107,7 +107,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 19,
+        "h": 16,
         "w": 12,
         "x": 0,
         "y": 8
@@ -116,7 +116,6 @@
       "options": {
         "decimalPlaces": 1,
         "fieldCategory": "category",
-        "fieldLanguage": "language",
         "fieldLanguagePercent": "languagePercent",
         "fieldMentionsCount": "socialCount",
         "fieldMentionsPercent": "socialPercent",
@@ -130,7 +129,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "category,socialCount,socialPercent,language,languagePercent,totalVoices,totalPosts,socialMediaTotal\nTwitter,1667,45.3,English,45,5000,5000,3000\nFacebook,1667,33.3,Luo,32.5,,,\nYouTube,2387,78.5,Swahili,78.34,,,\nPlatform,5000,95.5,,,,,",
+          "data": "category,socialCount,socialPercent,totalVoices,totalPosts,socialMediaTotal\nPlatform,1960,57.0,3437,1960,1477\nTwitter,1005,29.2,,,\nYouTube,263,7.7,,,\nFacebook,209,6.1,,,",
           "filters": [],
           "format": "table",
           "global_query_id": "",
@@ -155,10 +154,1015 @@
         "overrides": []
       },
       "gridPos": {
+        "h": 16,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "id": 34,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<!-- <div style=\"width:100%; height:100%; overflow:hidden;\">\n  <img src=\"/public/img/custom/screenshot.png\" style=\"width:100%; height:auto; object-fit:cover;\">\n</div> -->\n\n<div style=\"\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  display: flex;\n  justify-content: center;   /* horizontal center */\n  align-items: center;       /* vertical center */\n\">\n  <img src=\"/public/img/custom/screenshot.png\"\n       style=\"width:100%; height:auto; object-fit:cover;\">\n</div>\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "12.3.0-pre",
+      "title": "Sample Image of the Ushahidi Platform",
+      "type": "text"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 27
+        "y": 24
+      },
+      "id": 32,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">🎯</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Support Needed</h3>\n  </div>\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0-pre",
+      "title": "",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-blue",
+            "mode": "fixed"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "displayName": "Types of Help",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 19,
+        "w": 12,
+        "x": 0,
+        "y": 26
+      },
+      "id": 7,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "data": "label,percentage\n\"Farming Inputs, Tools \nand Equipment\",30.85\nInfrastructure & Housing,11.20\nFinancial Support & Funding,14.43\n\"Community Support \n& Governance\",8.06\n\"Training, Education \nand Awareness\",15.66\n\"Water Access, Storage \nand Irrigation\",13.66\n\"Climate & Weather \nRisk Management\",4.53\n\"Relocation & \nResettlement support\",1.61",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 25}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "What help do you think your household or community needs most to better adapt to weather changes?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "percentage"
+              }
+            ],
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 19,
+        "w": 12,
+        "x": 12,
+        "y": 26
+      },
+      "id": 19,
+      "options": {
+        "barColor": "green",
+        "decimalPlaces": 1,
+        "fieldCategory": "category",
+        "fieldDescription": "description",
+        "fieldKeywords": "keywords",
+        "fieldMentionsCount": "mentions_count",
+        "fieldMentionsPercent": "mentions_percent",
+        "showNumbering": false,
+        "title": "What help do you think your household or community needs most to better adapt to weather changes? (Ushahidi Platform)"
+      },
+      "pluginVersion": "1.0.0",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2119\"} }]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "mentions_percent"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "max-progressbars-panel"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 24,
+        "x": 0,
+        "y": 45
+      },
+      "id": 33,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">⚠️</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Perceived Causes and Effects of Climate Change</h3>\n  </div>\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0-pre",
+      "title": "",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 0,
+        "y": 47
+      },
+      "id": 16,
+      "options": {
+        "series_index": 0,
+        "wordCloudOptions": {
+          "deterministic": true,
+          "enableTooltip": true,
+          "fontFamily": "arial",
+          "fontSizes": [20, 80],
+          "padding": 1,
+          "rotationAngles": [0, 0],
+          "rotations": 2,
+          "scale": "sqrt",
+          "spiral": "archimedean",
+          "transitionDuration": 0
+        }
+      },
+      "pluginVersion": "1.2.11",
+      "targets": [
+        {
+          "columns": [],
+          "data": "label,value\nDrought,1271\nFloods,533\nHeatwaves,105\nHailstones,23\nHailstorms,13",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 16}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Which is the main weather event that affects your household/community most?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "value"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
+      "type": "magnesium-wordcloud-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 12,
+        "x": 12,
+        "y": 47
+      },
+      "id": 18,
+      "options": {
+        "series_index": 0,
+        "wordCloudOptions": {
+          "deterministic": false,
+          "enableTooltip": true,
+          "fontFamily": "arial",
+          "fontSizes": [15, 80],
+          "padding": 1,
+          "rotationAngles": [0, 0],
+          "rotations": 2,
+          "scale": "sqrt",
+          "spiral": "rectangular",
+          "transitionDuration": 0
+        }
+      },
+      "pluginVersion": "1.2.11",
+      "targets": [
+        {
+          "columns": [],
+          "data": "label,value\nYouth,484\nFarmers,402\nWomen,366\nMe,194\nMen,158\nChildren,130\nElderly,125\nAdults,56\nPastoralists,21\nOther,14\nPeople with Disabilities,10",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 21}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Who do you think is most affected by these weather events?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "value"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
+      "type": "magnesium-wordcloud-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 30,
+        "w": 12,
+        "x": 0,
+        "y": 59
+      },
+      "id": 12,
+      "options": {
+        "barColor": "green",
+        "decimalPlaces": 1,
+        "fieldCategory": "category",
+        "fieldDescription": "description",
+        "fieldKeywords": "keywords",
+        "fieldMentionsCount": "mentions_count",
+        "fieldMentionsPercent": "mentions_percent",
+        "showNumbering": false,
+        "title": "What do you think is causing these changes in patterns or the weather events? (Ushahidi Platform)"
+      },
+      "pluginVersion": "1.0.0",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2115:19\"} }]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "mentions_count"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "max-progressbars-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 30,
+        "w": 12,
+        "x": 12,
+        "y": 59
+      },
+      "id": 14,
+      "options": {
+        "barColor": "green",
+        "decimalPlaces": 1,
+        "fieldCategory": "category",
+        "fieldDescription": "description",
+        "fieldKeywords": "keywords",
+        "fieldMentionsCount": "mentions_count",
+        "fieldMentionsPercent": "mentions_percent",
+        "showNumbering": false,
+        "title": "How has the weather change affected your household/community in the last 3-5 years? (Ushahidi Platform)"
+      },
+      "pluginVersion": "1.0.0",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2115:15\"} }]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "mentions_count"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "max-progressbars-panel"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 12,
+        "x": 0,
+        "y": 89
+      },
+      "id": 21,
+      "options": {
+        "displayLabels": ["percent"],
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": true
+        },
+        "sort": "desc",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "cf5digrig99fkc"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes_social\" }}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "How has the weather change affected your household/community in the last 3-5 years? (Facebook, X and YouTube)",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "Mentions"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 15,
+        "w": 12,
+        "x": 12,
+        "y": 89
+      },
+      "id": 20,
+      "options": {
+        "displayLabels": ["percent"],
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": true
+        },
+        "sort": "desc",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "cf5digrig99fkc"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes_social\" }}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "What do you think is causing these changes in patterns or the weather events? (Facebook, X and YouTube)",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "Mentions"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
+      "type": "piechart"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 24,
+        "x": 0,
+        "y": 104
+      },
+      "id": 35,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">✏️</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Climate Awareness</h3>\n  </div>\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "12.3.0-pre",
+      "title": "",
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "description": "",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 0,
+        "y": 106
+      },
+      "id": 8,
+      "options": {
+        "displayLabels": ["percent", "name"],
+        "legend": {
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": true
+        },
+        "sort": "desc",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "cf5digrig99fkc"
+          },
+          "filters": [],
+          "format": "dataframe",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"cache\":\"skip\",\"id\":\"platform_data\", \"params\": {\"fieldId\":10}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Do you think climate change is something that is affecting you or is going to affect you personally?",
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": []
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 8,
+        "y": 106
+      },
+      "id": 10,
+      "options": {
+        "displayLabels": ["percent", "name"],
+        "legend": {
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": true
+        },
+        "sort": "desc",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "url",
+          "type": "json",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"cache\":\"skip\",\"id\":\"platform_data\", \"params\": {\"fieldId\":26}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Have you received any information/training in the past years on how to prepare for floods, droughts, or any other weather events?",
+      "transformations": [
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "Yes"
+                  }
+                },
+                "fieldName": "label"
+              },
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "No"
+                  }
+                },
+                "fieldName": "label"
+              },
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "I don't know"
+                  }
+                },
+                "fieldName": "label"
+              }
+            ],
+            "match": "any",
+            "type": "include"
+          }
+        }
+      ],
+      "type": "piechart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 8,
+        "x": 16,
+        "y": 106
+      },
+      "id": 17,
+      "options": {
+        "series_index": 0,
+        "wordCloudOptions": {
+          "deterministic": false,
+          "enableTooltip": true,
+          "fontFamily": "arial",
+          "fontSizes": [20, 80],
+          "padding": 1,
+          "rotationAngles": [0, 0],
+          "rotations": 2,
+          "scale": "sqrt",
+          "spiral": "archimedean",
+          "transitionDuration": 0
+        }
+      },
+      "pluginVersion": "1.2.11",
+      "targets": [
+        {
+          "columns": [],
+          "data": "label,value\nRadio,434\nLocal Government Announcements,465\nAgriculture extension officers,237\nTV,155\nAgriculture officer,89\nInternet,22\nReligious leaders,24\nSchools,9\nNeighbours and friends,7\nTown hall meetings/Community meetings,7\nI do not trust any source,5\n\"Social media (e.g., Facebook, WhatsApp)\",9\nI do not receive such information,4\nNewspaper,4\nMobile phone alerts,3",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 28}}]}",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Which source of information do you trust most to provide guidance during climate-related events?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "value"
+              }
+            ],
+            "fields": {}
+          }
+        }
+      ],
+      "type": "magnesium-wordcloud-panel"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 24,
+        "x": 0,
+        "y": 118
       },
       "id": 9,
       "options": {
@@ -167,7 +1171,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">🌍</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Climate Risks and Perceptions</h3>\n  </div>\n</div>",
+        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">📊</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Climate Risks and Perceptions</h3>\n  </div>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "12.3.0-pre",
@@ -227,10 +1231,274 @@
         "overrides": []
       },
       "gridPos": {
+        "h": 13,
+        "w": 12,
+        "x": 0,
+        "y": 120
+      },
+      "id": 27,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "data": "value,percentage\nAdaptation needs,3.72\nAdaptation practices,0.07\nAdaptation practices (community),19.10\nChannels Reported On,0.52\nClimate awareness,32.27\nClimate risks,8.47\nGovernment response,10.63\nLivelihood impacts,4.30\nNot relevant,12.39\nPerceptions,2.93\nPerspectives,0.13\nSupport Needed,5.48",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Topics (All Social Media)",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "percentage"
+              }
+            ],
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-orange",
+            "mode": "fixed"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "decimals": 2,
+          "displayName": "Emotions",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 13,
+        "w": 12,
+        "x": 12,
+        "y": 120
+      },
+      "id": 30,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "data": "emotions,percentage\nAnger,0.55\nConcern,0.18\nConfusion,0.61\nCuriosity,0.06\nEmpathy,1.28\nFear,1.65\nFrustration,8.38\nGratitude,15.17\nHope,43.67\nHopelessness,0.06\nMisery,0.06\nNeutral,1.41\nPositive,0.12\nSadness,2.51\nUnclear,14.56\nUrgency,9.72",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Emotions (All Social Media)",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "percentage"
+              }
+            ],
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "super-light-blue",
+            "mode": "fixed"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "decimals": 2,
+          "displayName": "Topics",
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 29
+        "y": 133
       },
       "id": 23,
       "options": {
@@ -362,7 +1630,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 29
+        "y": 133
       },
       "id": 25,
       "options": {
@@ -494,7 +1762,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 39
+        "y": 143
       },
       "id": 26,
       "options": {
@@ -626,7 +1894,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 39
+        "y": 143
       },
       "id": 24,
       "options": {
@@ -758,9 +2026,9 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 49
+        "y": 153
       },
-      "id": 27,
+      "id": 29,
       "options": {
         "barRadius": 0,
         "barWidth": 0.97,
@@ -787,7 +2055,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "value,percentage\nAdaptation needs,3.67\nAdaptation practices,0.09\nAdaptation practices (community),13.47\nChannels Reported On,0.66\nClimate awareness,39.83\nClimate risks,8.19\nGovernment response,3.20\nLivelihood impacts,2.82\nNot relevant,17.89\nPerceptions,3.95\nPerspections,0.09\nPerspectives,0.09\nSupport Needed,6.03",
+          "data": "value,percentage\nAdaptation needs,4.18\nAdaptation practices,0.10\nAdaptation practices (community),16.22\nChannels Reported On,0.80\nClimate awareness,51.44\nClimate risks,8.86\nGovernment response,3.98\nLivelihood impacts,3.08\nPerceptions,4.28\nPerspectives,0.20\nSupport Needed,6.87",
           "filters": [],
           "format": "table",
           "global_query_id": "",
@@ -890,7 +2158,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 49
+        "y": 153
       },
       "id": 28,
       "options": {
@@ -967,270 +2235,6 @@
       "type": "barchart"
     },
     {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "fixedColor": "super-light-blue",
-            "mode": "fixed"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "fillOpacity": 80,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineWidth": 1,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "decimals": 2,
-          "displayName": "Topics",
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": 0
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "percent"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 11,
-        "w": 12,
-        "x": 0,
-        "y": 59
-      },
-      "id": 29,
-      "options": {
-        "barRadius": 0,
-        "barWidth": 0.97,
-        "fullHighlight": false,
-        "groupWidth": 0.7,
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "orientation": "horizontal",
-        "showValue": "auto",
-        "stacking": "none",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        },
-        "xTickLabelRotation": 0,
-        "xTickLabelSpacing": 0
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "data": "value,percentage\nAdaptation needs,3.72\nAdaptation practices,0.07\nAdaptation practices (community),19.10\nChannels Reported On,0.52\nClimate awareness,32.27\nClimate risks,8.47\nGovernment response,10.63\nLivelihood impacts,4.30\nNot relevant,12.39\nPerceptions,2.93\nPerspections,0.07\nPerspectives,0.07\nSupport Needed,5.48",
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Topics (All Social Media)",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "percentage"
-              }
-            ],
-            "fields": {}
-          }
-        },
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "percentage"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "barchart"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "fixedColor": "super-light-orange",
-            "mode": "fixed"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "fillOpacity": 80,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineWidth": 1,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "decimals": 2,
-          "displayName": "Emotions",
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": 0
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "percent"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 11,
-        "w": 12,
-        "x": 12,
-        "y": 59
-      },
-      "id": 30,
-      "options": {
-        "barRadius": 0,
-        "barWidth": 0.97,
-        "fullHighlight": false,
-        "groupWidth": 0.7,
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "orientation": "horizontal",
-        "showValue": "auto",
-        "stacking": "none",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        },
-        "xTickLabelRotation": 0,
-        "xTickLabelSpacing": 0
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "data": "emotions,percentage\nAnger,0.55\nConcern,0.18\nConfusion,0.61\nCuriosity,0.06\nEmpathy,1.28\nFear,1.65\nFrustration,8.38\nGratitude,15.17\nHope,43.67\nHopelessness,0.06\nMisery,0.06\nNeutral,1.41\nPositive,0.12\nSadness,2.51\nUnclear,14.56\nUrgency,9.72",
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Emotions (All Social Media)",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "percentage"
-              }
-            ],
-            "fields": {}
-          }
-        },
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "percentage"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "barchart"
-    },
-    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -1239,7 +2243,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 70
+        "y": 163
       },
       "id": 22,
       "options": {
@@ -1248,7 +2252,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">🔄</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Adaptation Practices vs Needs</h3>\n    <p style=\"margin:4px 0 0;\">Identifying the successes vs gaps</p>\n  </div>\n</div>",
+        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">🔄</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Adaptation</h3>\n  </div>\n</div>",
         "mode": "html"
       },
       "pluginVersion": "12.3.0-pre",
@@ -1307,10 +2311,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 14,
+        "h": 20,
         "w": 12,
         "x": 0,
-        "y": 72
+        "y": 165
       },
       "id": 6,
       "options": {
@@ -1339,7 +2343,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "label,percentage\n\"Water Management, Flood Prevention & Drainage\",13.61\nHeat Protection & Sun Safety,9.16\nTree Planting & Environmental Restoration,10.08\n\"Farming Knowledge, Cooperatives & Groups\",9.32\nUsing Solar Energy,2.57\nEducation & Climate Learning,5.20\nDrought Management & Water Storage,11.95\nBrick Making & Protection,8.90\nRoad Repair & Community Work-Groups,7.29\n\"Risk Control & Safety Measures during Rain\",8.74\n\"Farm Management, Soil Conservation & Productivity\",3.86\n\"Financial Preparedness, Saving & Risk Reduction\",6.00\nPlanting Drought-Resistant & Climate-Smart Crops,0.80\nStoring Goods & Stock Safely,0.75\nPersonal Safety & Maintenance,1.55\nEnvironmental Cleaning,0.21",
+          "data": "label,percentage\n\"Water Management, Flood \nPrevention & Drainage\",13.61\nHeat Protection & Sun Safety,9.16\nTree Planting & Environmental Restoration,10.08\n\"Farming Knowledge, Cooperatives\n & Groups\",9.32\nUsing Solar Energy,2.57\nEducation & Climate Learning,5.20\nDrought Management & Water Storage,11.95\nBrick Making & Protection,8.90\n\"Road Repair & Community\n Work-Groups\",7.29\n\"Risk Control & Safety \nMeasures during Rain\",8.74\n\"Farm Management, Soil \nConservation & Productivity\",3.86\n\"Financial Preparedness, \nSaving & Risk Reduction\",6.00\n\"Planting Drought-Resistant \n& Climate-Smart Crops\",0.80\nStoring Goods & Stock Safely,0.75\nPersonal Safety & Maintenance,1.55\nEnvironmental Cleaning,0.21",
           "filters": [],
           "format": "table",
           "global_query_id": "",
@@ -1387,936 +2391,6 @@
       "type": "barchart"
     },
     {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "fixedColor": "light-blue",
-            "mode": "fixed"
-          },
-          "custom": {
-            "axisBorderShow": false,
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "fillOpacity": 80,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineWidth": 1,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "thresholdsStyle": {
-              "mode": "off"
-            }
-          },
-          "displayName": "Types of Help",
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": 0
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          },
-          "unit": "percent"
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 14,
-        "w": 12,
-        "x": 12,
-        "y": 72
-      },
-      "id": 7,
-      "options": {
-        "barRadius": 0,
-        "barWidth": 0.97,
-        "fullHighlight": false,
-        "groupWidth": 0.7,
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "orientation": "horizontal",
-        "showValue": "auto",
-        "stacking": "none",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        },
-        "xTickLabelRotation": 0,
-        "xTickLabelSpacing": 0
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "data": "label,percentage\n\"Farming Inputs, Tools and Equipment\",30.85\nInfrastructure & Housing,11.20\nFinancial Support & Funding,14.43\nCommunity Support & Governance,8.06\n\"Training, Education and Awareness\",15.66\n\"Water Access, Storage and Irrigation\",13.66\nClimate & Weather Risk Management,4.53\nRelocation & Resettlement support,1.61",
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 25}}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "What help do you think your household or community needs most to better adapt to weather changes?",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "percentage"
-              }
-            ],
-            "fields": {}
-          }
-        },
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "percentage"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "barchart"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "description": "",
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": []
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 10,
-        "w": 12,
-        "x": 0,
-        "y": 86
-      },
-      "id": 8,
-      "options": {
-        "displayLabels": ["percent", "name"],
-        "legend": {
-          "displayMode": "list",
-          "placement": "right",
-          "showLegend": true
-        },
-        "pieType": "pie",
-        "reduceOptions": {
-          "calcs": ["lastNotNull"],
-          "fields": "",
-          "values": true
-        },
-        "sort": "desc",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "datasource": {
-            "type": "yesoreyeram-infinity-datasource",
-            "uid": "cf5digrig99fkc"
-          },
-          "filters": [],
-          "format": "dataframe",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"cache\":\"skip\",\"id\":\"platform_data\", \"params\": {\"fieldId\":10}}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Do you think climate change is something that is affecting you or is going to affect you personally?",
-      "type": "piechart"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": []
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 10,
-        "w": 12,
-        "x": 12,
-        "y": 86
-      },
-      "id": 10,
-      "options": {
-        "displayLabels": ["percent", "name"],
-        "legend": {
-          "displayMode": "list",
-          "placement": "right",
-          "showLegend": true
-        },
-        "pieType": "pie",
-        "reduceOptions": {
-          "calcs": ["lastNotNull"],
-          "fields": "",
-          "values": true
-        },
-        "sort": "desc",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"cache\":\"skip\",\"id\":\"platform_data\", \"params\": {\"fieldId\":26}}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Have you received any information/training in the past years on how to prepare for floods, droughts, or any other weather events?",
-      "transformations": [
-        {
-          "id": "filterByValue",
-          "options": {
-            "filters": [
-              {
-                "config": {
-                  "id": "equal",
-                  "options": {
-                    "value": "Yes"
-                  }
-                },
-                "fieldName": "label"
-              },
-              {
-                "config": {
-                  "id": "equal",
-                  "options": {
-                    "value": "No"
-                  }
-                },
-                "fieldName": "label"
-              },
-              {
-                "config": {
-                  "id": "equal",
-                  "options": {
-                    "value": "I don't know"
-                  }
-                },
-                "fieldName": "label"
-              }
-            ],
-            "match": "any",
-            "type": "include"
-          }
-        }
-      ],
-      "type": "piechart"
-    },
-    {
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 2,
-        "w": 24,
-        "x": 0,
-        "y": 96
-      },
-      "id": 5,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"display:flex; align-items:center;\">\n  <div style=\"\n      width:40px; \n      height:40px; \n      border-radius:50%; \n      background-color:#f1f1f1; \n      display:flex; \n      align-items:center; \n      justify-content:center;\n      flex-shrink:0;\n    \">\n    <span style=\"font-size:20px;\">📊</span>\n  </div>\n\n  <div style=\"margin-left:16px;\">\n    <h3 style=\"font-weight:bold; margin:0;\">Insights</h3>\n    <p style=\"margin:4px 0 0;\">Causes and Effects of Climate Change</p>\n  </div>\n</div>",
-        "mode": "html"
-      },
-      "pluginVersion": "12.3.0-pre",
-      "title": "",
-      "type": "text"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 8,
-        "x": 0,
-        "y": 98
-      },
-      "id": 16,
-      "options": {
-        "series_index": 0,
-        "wordCloudOptions": {
-          "deterministic": true,
-          "enableTooltip": true,
-          "fontFamily": "arial",
-          "fontSizes": [20, 80],
-          "padding": 1,
-          "rotationAngles": [0, 0],
-          "rotations": 2,
-          "scale": "sqrt",
-          "spiral": "archimedean",
-          "transitionDuration": 0
-        }
-      },
-      "pluginVersion": "1.2.11",
-      "targets": [
-        {
-          "columns": [],
-          "data": "label,value\nDrought,1271\nFloods,533\nHeatwaves,105\nHailstones,23\nSoil,14\nHailstorms,13\nSun,1",
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 16}}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Which is the main weather event that affects your household/community most?",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "value"
-              }
-            ],
-            "fields": {}
-          }
-        }
-      ],
-      "type": "magnesium-wordcloud-panel"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 8,
-        "x": 8,
-        "y": 98
-      },
-      "id": 17,
-      "options": {
-        "series_index": 0,
-        "wordCloudOptions": {
-          "deterministic": false,
-          "enableTooltip": true,
-          "fontFamily": "arial",
-          "fontSizes": [20, 80],
-          "padding": 1,
-          "rotationAngles": [0, 0],
-          "rotations": 2,
-          "scale": "sqrt",
-          "spiral": "archimedean",
-          "transitionDuration": 0
-        }
-      },
-      "pluginVersion": "1.2.11",
-      "targets": [
-        {
-          "columns": [],
-          "data": "label,value\nRadio,434\nLocal Government Announcements,465\nAgriculture extension officers,237\nTV,155\nAgriculture officer,89\nInternet,22\nReligious leaders,24\nSchools,9\nNeighbours and friends,7\nTown hall meetings/Community meetings,7\nI do not trust any source,5\n\"Social media (e.g., Facebook, WhatsApp)\",9\nI do not receive such information,4\nNewspaper,4\nMobile phone alerts,3",
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 28}}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Which source of information do you trust most to provide guidance during climate-related events?",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "value"
-              }
-            ],
-            "fields": {}
-          }
-        }
-      ],
-      "type": "magnesium-wordcloud-panel"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 12,
-        "w": 8,
-        "x": 16,
-        "y": 98
-      },
-      "id": 18,
-      "options": {
-        "series_index": 0,
-        "wordCloudOptions": {
-          "deterministic": false,
-          "enableTooltip": true,
-          "fontFamily": "arial",
-          "fontSizes": [15, 80],
-          "padding": 1,
-          "rotationAngles": [0, 0],
-          "rotations": 2,
-          "scale": "sqrt",
-          "spiral": "rectangular",
-          "transitionDuration": 0
-        }
-      },
-      "pluginVersion": "1.2.11",
-      "targets": [
-        {
-          "columns": [],
-          "data": "label,value\nYouth,484\nFarmers,402\nWomen,366\nMe,194\nMen,158\nChildren,130\nElderly,125\nAdults,56\nPastoralists,21\nOther,14\nPeople with Disabilities,10",
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 21}}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "Who do you think is most affected by these weather events?",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "value"
-              }
-            ],
-            "fields": {}
-          }
-        }
-      ],
-      "type": "magnesium-wordcloud-panel"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 30,
-        "w": 12,
-        "x": 0,
-        "y": 110
-      },
-      "id": 12,
-      "options": {
-        "barColor": "green",
-        "decimalPlaces": 1,
-        "fieldCategory": "category",
-        "fieldDescription": "description",
-        "fieldKeywords": "keywords",
-        "fieldMentionsCount": "mentions_count",
-        "fieldMentionsPercent": "mentions_percent",
-        "showNumbering": false,
-        "title": "What do you think is causing these changes in patterns or the weather events? (Ushahidi Platform)"
-      },
-      "pluginVersion": "1.0.0",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2115:19\"} }]}\n",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "",
-      "transformations": [
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "mentions_count"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "max-progressbars-panel"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": []
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 15,
-        "w": 12,
-        "x": 12,
-        "y": 110
-      },
-      "id": 20,
-      "options": {
-        "displayLabels": ["percent"],
-        "legend": {
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "pieType": "pie",
-        "reduceOptions": {
-          "calcs": ["lastNotNull"],
-          "fields": "",
-          "values": true
-        },
-        "sort": "desc",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
-          "datasource": {
-            "type": "yesoreyeram-infinity-datasource",
-            "uid": "cf5digrig99fkc"
-          },
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes_social\" }}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "What do you think is causing these changes in patterns or the weather events? (Facebook, X and YouTube)",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "Mentions"
-              }
-            ],
-            "fields": {}
-          }
-        }
-      ],
-      "type": "piechart"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": []
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 15,
-        "w": 12,
-        "x": 12,
-        "y": 125
-      },
-      "id": 21,
-      "options": {
-        "displayLabels": ["percent"],
-        "legend": {
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "pieType": "pie",
-        "reduceOptions": {
-          "calcs": ["lastNotNull"],
-          "fields": "",
-          "values": true
-        },
-        "sort": "desc",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
-          "datasource": {
-            "type": "yesoreyeram-infinity-datasource",
-            "uid": "cf5digrig99fkc"
-          },
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes_social\" }}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "(To be confirmed) How has the weather change affected your household/community in the last 3-5 years? (Facebook, X and YouTube)",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "Mentions"
-              }
-            ],
-            "fields": {}
-          }
-        }
-      ],
-      "type": "piechart"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 44,
-        "w": 12,
-        "x": 0,
-        "y": 140
-      },
-      "id": 14,
-      "options": {
-        "barColor": "green",
-        "decimalPlaces": 1,
-        "fieldCategory": "category",
-        "fieldDescription": "description",
-        "fieldKeywords": "keywords",
-        "fieldMentionsCount": "mentions_count",
-        "fieldMentionsPercent": "mentions_percent",
-        "showNumbering": false,
-        "title": "How has the weather change affected your household/community in the last 3-5 years? (Ushahidi Platform)"
-      },
-      "pluginVersion": "1.0.0",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2115:15\"} }]}\n",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "",
-      "transformations": [
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "mentions_count"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "max-progressbars-panel"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 44,
-        "w": 12,
-        "x": 12,
-        "y": 140
-      },
-      "id": 19,
-      "options": {
-        "barColor": "green",
-        "decimalPlaces": 1,
-        "fieldCategory": "category",
-        "fieldDescription": "description",
-        "fieldKeywords": "keywords",
-        "fieldMentionsCount": "mentions_count",
-        "fieldMentionsPercent": "mentions_percent",
-        "showNumbering": false,
-        "title": "What help do you think your household or community needs most to better adapt to weather changes? (Ushahidi Platform)"
-      },
-      "pluginVersion": "1.0.0",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2119\"} }]}\n",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "",
-      "transformations": [
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "mentions_percent"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "max-progressbars-panel"
-    },
-    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -2325,7 +2399,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 184
+        "y": 185
       },
       "id": 2,
       "options": {
@@ -2356,5 +2430,5 @@
   "timezone": "browser",
   "title": "Kijiji Yeetu",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 102
+  "version": 128
 }
