@@ -569,7 +569,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 30,
+        "h": 26,
         "w": 12,
         "x": 0,
         "y": 59
@@ -634,7 +634,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 30,
+        "h": 31,
         "w": 12,
         "x": 12,
         "y": 59
@@ -729,108 +729,17 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 15,
+        "h": 12,
         "w": 12,
         "x": 0,
-        "y": 89
-      },
-      "id": 21,
-      "options": {
-        "displayLabels": ["percent"],
-        "legend": {
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "pieType": "pie",
-        "reduceOptions": {
-          "calcs": ["lastNotNull"],
-          "fields": "",
-          "values": true
-        },
-        "sort": "desc",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
-          "datasource": {
-            "type": "yesoreyeram-infinity-datasource",
-            "uid": "cf5digrig99fkc"
-          },
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes_social\" }}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "How has the weather change affected your household/community in the last 3-5 years? (Facebook, X and YouTube)",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "Mentions"
-              }
-            ],
-            "fields": {}
-          }
-        }
-      ],
-      "type": "piechart"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": []
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 15,
-        "w": 12,
-        "x": 12,
-        "y": 89
+        "y": 85
       },
       "id": 20,
       "options": {
         "displayLabels": ["percent"],
         "legend": {
           "displayMode": "list",
-          "placement": "bottom",
+          "placement": "right",
           "showLegend": true
         },
         "pieType": "pie",
@@ -850,7 +759,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
+          "data": "Labels,Mentions\nDeforestation and Ecosystem Destruction,110\n\"Pollution, Waste, and Infrastructure Issues\",58\nClimate Change and Weather Variability,63\nHuman Activities (General),32\nNatural Causes,3",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
             "uid": "cf5digrig99fkc"
@@ -898,7 +807,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 104
+        "y": 97
       },
       "id": 35,
       "options": {
@@ -940,7 +849,7 @@
         "h": 12,
         "w": 8,
         "x": 0,
-        "y": 106
+        "y": 99
       },
       "id": 8,
       "options": {
@@ -1016,7 +925,7 @@
         "h": 12,
         "w": 8,
         "x": 8,
-        "y": 106
+        "y": 99
       },
       "id": 10,
       "options": {
@@ -1114,7 +1023,7 @@
         "h": 12,
         "w": 8,
         "x": 16,
-        "y": 106
+        "y": 99
       },
       "id": 17,
       "options": {
@@ -1180,7 +1089,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 118
+        "y": 111
       },
       "id": 9,
       "options": {
@@ -1252,7 +1161,7 @@
         "h": 13,
         "w": 12,
         "x": 0,
-        "y": 120
+        "y": 113
       },
       "id": 27,
       "options": {
@@ -1384,7 +1293,7 @@
         "h": 13,
         "w": 12,
         "x": 12,
-        "y": 120
+        "y": 113
       },
       "id": 30,
       "options": {
@@ -1516,7 +1425,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 133
+        "y": 126
       },
       "id": 23,
       "options": {
@@ -1648,7 +1557,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 133
+        "y": 126
       },
       "id": 25,
       "options": {
@@ -1780,7 +1689,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 143
+        "y": 136
       },
       "id": 26,
       "options": {
@@ -1912,7 +1821,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 143
+        "y": 136
       },
       "id": 24,
       "options": {
@@ -2044,7 +1953,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 153
+        "y": 146
       },
       "id": 29,
       "options": {
@@ -2176,7 +2085,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 153
+        "y": 146
       },
       "id": 28,
       "options": {
@@ -2261,7 +2170,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 163
+        "y": 156
       },
       "id": 22,
       "options": {
@@ -2332,7 +2241,7 @@
         "h": 20,
         "w": 12,
         "x": 0,
-        "y": 165
+        "y": 158
       },
       "id": 6,
       "options": {
@@ -2465,7 +2374,7 @@
         "h": 20,
         "w": 12,
         "x": 12,
-        "y": 165
+        "y": 158
       },
       "id": 36,
       "options": {
@@ -2550,7 +2459,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 185
+        "y": 178
       },
       "id": 2,
       "options": {
@@ -2581,5 +2490,5 @@
   "timezone": "browser",
   "title": "Ushahidi",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 145
+  "version": 155
 }
