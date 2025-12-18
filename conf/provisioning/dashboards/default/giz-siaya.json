@@ -250,8 +250,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 19,
-        "w": 12,
+        "h": 17,
+        "w": 24,
         "x": 0,
         "y": 26
       },
@@ -330,71 +330,6 @@
       "type": "barchart"
     },
     {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 19,
-        "w": 12,
-        "x": 12,
-        "y": 26
-      },
-      "id": 19,
-      "options": {
-        "barColor": "green",
-        "decimalPlaces": 1,
-        "fieldCategory": "category",
-        "fieldDescription": "description",
-        "fieldKeywords": "keywords",
-        "fieldMentionsCount": "mentions_count",
-        "fieldMentionsPercent": "mentions_percent",
-        "showNumbering": false,
-        "title": "What help do you think your household or community needs most to better adapt to weather changes? (Ushahidi Platform)"
-      },
-      "pluginVersion": "1.0.0",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2119\"} }]}\n",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "",
-      "transformations": [
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "mentions_percent"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "max-progressbars-panel"
-    },
-    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -403,7 +338,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 45
+        "y": 43
       },
       "id": 33,
       "options": {
@@ -432,7 +367,7 @@
         "h": 12,
         "w": 12,
         "x": 0,
-        "y": 47
+        "y": 45
       },
       "id": 16,
       "options": {
@@ -502,7 +437,7 @@
         "h": 12,
         "w": 12,
         "x": 12,
-        "y": 47
+        "y": 45
       },
       "id": 18,
       "options": {
@@ -569,10 +504,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 30,
+        "h": 26,
         "w": 12,
         "x": 0,
-        "y": 59
+        "y": 57
       },
       "id": 12,
       "options": {
@@ -634,10 +569,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 30,
+        "h": 31,
         "w": 12,
         "x": 12,
-        "y": 59
+        "y": 57
       },
       "id": 14,
       "options": {
@@ -685,6 +620,24 @@
               }
             ]
           }
+        },
+        {
+          "id": "filterByValue",
+          "options": {
+            "filters": [
+              {
+                "config": {
+                  "id": "equal",
+                  "options": {
+                    "value": "Irrelevant or Off-Topic"
+                  }
+                },
+                "fieldName": "category"
+              }
+            ],
+            "match": "any",
+            "type": "exclude"
+          }
         }
       ],
       "type": "max-progressbars-panel"
@@ -711,108 +664,17 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 15,
+        "h": 12,
         "w": 12,
         "x": 0,
-        "y": 89
-      },
-      "id": 21,
-      "options": {
-        "displayLabels": ["percent"],
-        "legend": {
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "pieType": "pie",
-        "reduceOptions": {
-          "calcs": ["lastNotNull"],
-          "fields": "",
-          "values": true
-        },
-        "sort": "desc",
-        "tooltip": {
-          "hideZeros": false,
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "12.3.0-pre",
-      "targets": [
-        {
-          "columns": [],
-          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
-          "datasource": {
-            "type": "yesoreyeram-infinity-datasource",
-            "uid": "cf5digrig99fkc"
-          },
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "inline",
-          "type": "csv",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"nethope_insights\", \"params\": { \"insight\": \"perceived_causes_social\" }}]}",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "How has the weather change affected your household/community in the last 3-5 years? (Facebook, X and YouTube)",
-      "transformations": [
-        {
-          "id": "convertFieldType",
-          "options": {
-            "conversions": [
-              {
-                "destinationType": "number",
-                "targetField": "Mentions"
-              }
-            ],
-            "fields": {}
-          }
-        }
-      ],
-      "type": "piechart"
-    },
-    {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "palette-classic"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": []
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 15,
-        "w": 12,
-        "x": 12,
-        "y": 89
+        "y": 83
       },
       "id": 20,
       "options": {
         "displayLabels": ["percent"],
         "legend": {
           "displayMode": "list",
-          "placement": "bottom",
+          "placement": "right",
           "showLegend": true
         },
         "pieType": "pie",
@@ -832,7 +694,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "Labels,Mentions\nDeforestation and Land Use Change,39.1\nIndustrial Processes and Fossil Fuels,11.3\nIndividuals' Activities and Pollution,15.5\nNatural Environmental Factors,10.9\nDivine or Supernatural Attribution,20.8\nLack of Knowledge or Uncertainty,2.50",
+          "data": "Labels,Mentions\nDeforestation and Ecosystem Destruction,110\n\"Pollution, Waste, and Infrastructure Issues\",58\nClimate Change and Weather Variability,63\nHuman Activities (General),32\nNatural Causes,3",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
             "uid": "cf5digrig99fkc"
@@ -880,7 +742,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 104
+        "y": 95
       },
       "id": 35,
       "options": {
@@ -922,7 +784,7 @@
         "h": 12,
         "w": 8,
         "x": 0,
-        "y": 106
+        "y": 97
       },
       "id": 8,
       "options": {
@@ -998,7 +860,7 @@
         "h": 12,
         "w": 8,
         "x": 8,
-        "y": 106
+        "y": 97
       },
       "id": 10,
       "options": {
@@ -1096,7 +958,7 @@
         "h": 12,
         "w": 8,
         "x": 16,
-        "y": 106
+        "y": 97
       },
       "id": 17,
       "options": {
@@ -1162,7 +1024,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 118
+        "y": 109
       },
       "id": 9,
       "options": {
@@ -1234,7 +1096,7 @@
         "h": 13,
         "w": 12,
         "x": 0,
-        "y": 120
+        "y": 111
       },
       "id": 27,
       "options": {
@@ -1263,7 +1125,7 @@
       "targets": [
         {
           "columns": [],
-          "data": "value,percentage\nAdaptation needs,3.72\nAdaptation practices,0.07\nAdaptation practices (community),19.10\nChannels Reported On,0.52\nClimate awareness,32.27\nClimate risks,8.47\nGovernment response,10.63\nLivelihood impacts,4.30\nNot relevant,12.39\nPerceptions,2.93\nPerspectives,0.13\nSupport Needed,5.48",
+          "data": "value,percentage\nAdaptation needs,4.06\nAdaptation practices,0.07\nAdaptation practices (community),21.19\nChannels Reported On,0.61\nClimate awareness,39.88\nClimate risks,8.94\nGovernment response,11.44\nLivelihood impacts,4.54\nPerceptions,3.11\nPerspectives,0.14\nSupport Needed,6.03",
           "filters": [],
           "format": "table",
           "global_query_id": "",
@@ -1366,7 +1228,7 @@
         "h": 13,
         "w": 12,
         "x": 12,
-        "y": 120
+        "y": 111
       },
       "id": 30,
       "options": {
@@ -1498,7 +1360,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 133
+        "y": 124
       },
       "id": 23,
       "options": {
@@ -1630,7 +1492,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 133
+        "y": 124
       },
       "id": 25,
       "options": {
@@ -1762,7 +1624,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 143
+        "y": 134
       },
       "id": 26,
       "options": {
@@ -1894,7 +1756,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 143
+        "y": 134
       },
       "id": 24,
       "options": {
@@ -2026,7 +1888,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 153
+        "y": 144
       },
       "id": 29,
       "options": {
@@ -2158,7 +2020,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 153
+        "y": 144
       },
       "id": 28,
       "options": {
@@ -2243,7 +2105,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 163
+        "y": 154
       },
       "id": 22,
       "options": {
@@ -2314,7 +2176,7 @@
         "h": 20,
         "w": 12,
         "x": 0,
-        "y": 165
+        "y": 156
       },
       "id": 6,
       "options": {
@@ -2391,6 +2253,139 @@
       "type": "barchart"
     },
     {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "cf5digrig99fkc"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "light-blue",
+            "mode": "fixed"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "decimals": 2,
+          "displayName": "Persons",
+          "mappings": [],
+          "min": 1,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 20,
+        "w": 12,
+        "x": 12,
+        "y": 156
+      },
+      "id": 36,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "horizontal",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.3.0-pre",
+      "targets": [
+        {
+          "columns": [],
+          "data": "label,percentage\nIndividuals,31.72\n\"The National \nGovernment\",25.34\nCounty Government,23.46\n\"International \nOrganizations (e.g. the UN)\",16.46\nBusiness and Industry,1.87\n\"CSOs/NGOs/FBOs/\nEnvironmental Organizations\",1.15",
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "data",
+          "source": "inline",
+          "type": "csv",
+          "url": "",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Who do you think should have the main responsibility for tackling climate change?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "percentage"
+              }
+            ],
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -2399,7 +2394,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 185
+        "y": 176
       },
       "id": 2,
       "options": {
@@ -2428,7 +2423,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "Kijiji Yeetu",
+  "title": "Ushahidi",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 128
+  "version": 157
 }
