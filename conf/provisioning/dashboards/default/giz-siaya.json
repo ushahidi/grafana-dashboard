@@ -250,8 +250,8 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 19,
-        "w": 12,
+        "h": 17,
+        "w": 24,
         "x": 0,
         "y": 26
       },
@@ -330,71 +330,6 @@
       "type": "barchart"
     },
     {
-      "datasource": {
-        "type": "yesoreyeram-infinity-datasource",
-        "uid": "cf5digrig99fkc"
-      },
-      "fieldConfig": {
-        "defaults": {},
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 19,
-        "w": 12,
-        "x": 12,
-        "y": 26
-      },
-      "id": 19,
-      "options": {
-        "barColor": "green",
-        "decimalPlaces": 1,
-        "fieldCategory": "category",
-        "fieldDescription": "description",
-        "fieldKeywords": "keywords",
-        "fieldMentionsCount": "mentions_count",
-        "fieldMentionsPercent": "mentions_percent",
-        "showNumbering": false,
-        "title": "What help do you think your household or community needs most to better adapt to weather changes? (Ushahidi Platform)"
-      },
-      "pluginVersion": "1.0.0",
-      "targets": [
-        {
-          "columns": [],
-          "filters": [],
-          "format": "table",
-          "global_query_id": "",
-          "parser": "backend",
-          "refId": "A",
-          "root_selector": "data",
-          "source": "url",
-          "type": "json",
-          "url": "",
-          "url_options": {
-            "body_content_type": "application/json",
-            "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"insights\", \"params\":{\"analysis_tag\":\"USH-2119\"} }]}\n",
-            "method": "POST"
-          }
-        }
-      ],
-      "title": "",
-      "transformations": [
-        {
-          "id": "sortBy",
-          "options": {
-            "fields": {},
-            "sort": [
-              {
-                "desc": true,
-                "field": "mentions_percent"
-              }
-            ]
-          }
-        }
-      ],
-      "type": "max-progressbars-panel"
-    },
-    {
       "fieldConfig": {
         "defaults": {},
         "overrides": []
@@ -403,7 +338,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 45
+        "y": 43
       },
       "id": 33,
       "options": {
@@ -432,7 +367,7 @@
         "h": 12,
         "w": 12,
         "x": 0,
-        "y": 47
+        "y": 45
       },
       "id": 16,
       "options": {
@@ -502,7 +437,7 @@
         "h": 12,
         "w": 12,
         "x": 12,
-        "y": 47
+        "y": 45
       },
       "id": 18,
       "options": {
@@ -572,7 +507,7 @@
         "h": 26,
         "w": 12,
         "x": 0,
-        "y": 59
+        "y": 57
       },
       "id": 12,
       "options": {
@@ -637,7 +572,7 @@
         "h": 31,
         "w": 12,
         "x": 12,
-        "y": 59
+        "y": 57
       },
       "id": 14,
       "options": {
@@ -732,7 +667,7 @@
         "h": 12,
         "w": 12,
         "x": 0,
-        "y": 85
+        "y": 83
       },
       "id": 20,
       "options": {
@@ -807,7 +742,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 97
+        "y": 95
       },
       "id": 35,
       "options": {
@@ -849,7 +784,7 @@
         "h": 12,
         "w": 8,
         "x": 0,
-        "y": 99
+        "y": 97
       },
       "id": 8,
       "options": {
@@ -925,7 +860,7 @@
         "h": 12,
         "w": 8,
         "x": 8,
-        "y": 99
+        "y": 97
       },
       "id": 10,
       "options": {
@@ -1023,7 +958,7 @@
         "h": 12,
         "w": 8,
         "x": 16,
-        "y": 99
+        "y": 97
       },
       "id": 17,
       "options": {
@@ -1089,7 +1024,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 111
+        "y": 109
       },
       "id": 9,
       "options": {
@@ -1161,7 +1096,7 @@
         "h": 13,
         "w": 12,
         "x": 0,
-        "y": 113
+        "y": 111
       },
       "id": 27,
       "options": {
@@ -1293,7 +1228,7 @@
         "h": 13,
         "w": 12,
         "x": 12,
-        "y": 113
+        "y": 111
       },
       "id": 30,
       "options": {
@@ -1425,7 +1360,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 126
+        "y": 124
       },
       "id": 23,
       "options": {
@@ -1557,7 +1492,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 126
+        "y": 124
       },
       "id": 25,
       "options": {
@@ -1689,7 +1624,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 136
+        "y": 134
       },
       "id": 26,
       "options": {
@@ -1821,7 +1756,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 136
+        "y": 134
       },
       "id": 24,
       "options": {
@@ -1953,7 +1888,7 @@
         "h": 10,
         "w": 12,
         "x": 0,
-        "y": 146
+        "y": 144
       },
       "id": 29,
       "options": {
@@ -2085,7 +2020,7 @@
         "h": 10,
         "w": 12,
         "x": 12,
-        "y": 146
+        "y": 144
       },
       "id": 28,
       "options": {
@@ -2170,7 +2105,7 @@
         "h": 2,
         "w": 24,
         "x": 0,
-        "y": 156
+        "y": 154
       },
       "id": 22,
       "options": {
@@ -2241,7 +2176,7 @@
         "h": 20,
         "w": 12,
         "x": 0,
-        "y": 158
+        "y": 156
       },
       "id": 6,
       "options": {
@@ -2374,7 +2309,7 @@
         "h": 20,
         "w": 12,
         "x": 12,
-        "y": 158
+        "y": 156
       },
       "id": 36,
       "options": {
@@ -2459,7 +2394,7 @@
         "h": 5,
         "w": 24,
         "x": 0,
-        "y": 178
+        "y": 176
       },
       "id": 2,
       "options": {
@@ -2490,5 +2425,5 @@
   "timezone": "browser",
   "title": "Ushahidi",
   "uid": "740b6302-f735-4c8c-a862-e8ff9d16cf70",
-  "version": 155
+  "version": 157
 }
