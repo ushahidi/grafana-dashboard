@@ -2440,8 +2440,10 @@
               "mode": "off"
             }
           },
+          "decimals": 2,
           "displayName": "Persons",
           "mappings": [],
+          "min": 1,
           "thresholds": {
             "mode": "absolute",
             "steps": [
@@ -2454,7 +2456,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "percent"
         },
         "overrides": []
       },
@@ -2491,24 +2494,51 @@
       "targets": [
         {
           "columns": [],
+          "data": "label,percentage\nIndividuals,31.72\n\"The National \nGovernment\",25.34\nCounty Government,23.46\n\"International \nOrganizations (e.g. the UN)\",16.46\nBusiness and Industry,1.87\n\"CSOs/NGOs/FBOs/\nEnvironmental Organizations\",1.15",
           "filters": [],
           "format": "table",
           "global_query_id": "",
           "parser": "backend",
           "refId": "A",
           "root_selector": "data",
-          "source": "url",
-          "type": "json",
+          "source": "inline",
+          "type": "csv",
           "url": "",
           "url_options": {
             "body_content_type": "application/json",
             "body_type": "raw",
-            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 12}}]}",
+            "data": "{\"operations\":[{\"id\":\"platform_data\", \"params\": {\"fieldId\": 20}}]}\n",
             "method": "POST"
           }
         }
       ],
       "title": "Who do you think should have the main responsibility for tackling climate change?",
+      "transformations": [
+        {
+          "id": "convertFieldType",
+          "options": {
+            "conversions": [
+              {
+                "destinationType": "number",
+                "targetField": "percentage"
+              }
+            ],
+            "fields": {}
+          }
+        },
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": true,
+                "field": "percentage"
+              }
+            ]
+          }
+        }
+      ],
       "type": "barchart"
     },
     {
