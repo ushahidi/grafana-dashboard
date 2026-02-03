@@ -71,6 +71,7 @@ public/css/*.min.css
 .vs/
 .cursor/
 .devcontainer/
+.claude/
 
 .eslintcache
 .stylelintcache
@@ -171,6 +172,7 @@ pkg/services/quota/quotaimpl/storage/storage.json
 /packages/grafana-ui/.yarn/.cache
 /packages/grafana-ui/.storybook/static
 /packages/grafana-ui/unstable
+/packages/grafana-flamegraph/.storybook/static
 /packages/**/dist
 /packages/**/compiled
 /packages/**/.rpt2_cache
@@ -266,3 +268,5 @@ public/mockServiceWorker.js
 
 # Ignore grafana/hippocampus local cache folder
 .hippo
+
+coverage-summary.json
